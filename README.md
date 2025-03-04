@@ -1,7 +1,7 @@
 # tailwind-css
 Tailwind CSS Learning
 
-# Tools
+# Required Tools
 1) Node
 2) NPM
 3) VSCode
