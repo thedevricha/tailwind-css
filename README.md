@@ -1,5 +1,5 @@
 # tailwind-css
-Tailwind CSS Learning
+Tailwind CSS 4 Learning
 
 # What is Tailwind CSS
 1) CSS Framework
