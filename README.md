@@ -23,11 +23,11 @@ Just basic understanding of HTML and CSS
 2) NPM
 
 # VSCode extensions
-1) Live Server => Link: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
-2) Tailwind CSS IntelliSense => Link: https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
-3) Inline fold => Link: https://marketplace.visualstudio.com/items?itemName=moalamri.inline-fold
+1) Live Server => https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+2) Tailwind CSS IntelliSense => https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
+3) Inline fold => https://marketplace.visualstudio.com/items?itemName=moalamri.inline-fold
 
-# Useful Resources
-1) Get started with Tailwind CSS: https://tailwindcss.com/docs/installation/using-vite
-2) Tailwind CSS Full Course for Beginners | Complete All-in-One Tutorial | 3 Hours : https://www.youtube.com/watch?v=lCxcTsOHrjo
-3) Tailwind css tutorial Hindi: https://www.youtube.com/playlist?list=PL8p2I9GklV471sLqkGuf0eKAu9sVNmKFV
+# Learning Resources
+1) Get started with Tailwind CSS => https://tailwindcss.com/docs/installation/tailwind-cli
+2) Tailwind CSS Full Course for Beginners | Complete All-in-One Tutorial | 3 Hours =>  https://www.youtube.com/watch?v=lCxcTsOHrjo
+3) Tailwind css tutorial Hindi => https://www.youtube.com/playlist?list=PL8p2I9GklV471sLqkGuf0eKAu9sVNmKFV
