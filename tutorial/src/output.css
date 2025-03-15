@@ -64,6 +64,8 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-xl: 36rem;
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-bold: 700;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
@@ -283,14 +285,8 @@
   .sticky {
     position: sticky;
   }
-  .inset-10 {
-    inset: calc(var(--spacing) * 10);
-  }
   .inset-30 {
     inset: calc(var(--spacing) * 30);
-  }
-  .inset-40 {
-    inset: calc(var(--spacing) * 40);
   }
   .end-1 {
     inset-inline-end: calc(var(--spacing) * 1);
@@ -433,6 +429,9 @@
   .mx-5 {
     margin-inline: calc(var(--spacing) * 5);
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .my-5 {
     margin-block: calc(var(--spacing) * 5);
   }
@@ -555,25 +554,9 @@
     width: calc(var(--spacing) * 50);
     height: calc(var(--spacing) * 50);
   }
-  .size-60 {
-    width: calc(var(--spacing) * 60);
-    height: calc(var(--spacing) * 60);
-  }
-  .size-90 {
-    width: calc(var(--spacing) * 90);
-    height: calc(var(--spacing) * 90);
-  }
   .size-100 {
     width: calc(var(--spacing) * 100);
     height: calc(var(--spacing) * 100);
-  }
-  .size-200 {
-    width: calc(var(--spacing) * 200);
-    height: calc(var(--spacing) * 200);
-  }
-  .size-300 {
-    width: calc(var(--spacing) * 300);
-    height: calc(var(--spacing) * 300);
   }
   .size-\[300px\] {
     width: 300px;
@@ -1380,6 +1363,9 @@
   .bg-teal-300 {
     background-color: var(--color-teal-300);
   }
+  .bg-yellow-600 {
+    background-color: var(--color-yellow-600);
+  }
   .-bg-conic {
     --tw-gradient-position: in oklab;
     background-image: conic-gradient(var(--tw-gradient-stops));
@@ -1614,6 +1600,10 @@
   }
   .align-top {
     vertical-align: top;
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
   .leading-none {
     --tw-leading: 1;
@@ -2231,6 +2221,21 @@
   .\[\&\>\*\]\:flex {
     &>* {
       display: flex;
+    }
+  }
+  .\[\&\>\*\]\:p-3 {
+    &>* {
+      padding: calc(var(--spacing) * 3);
+    }
+  }
+  .\[\&\>\*\]\:p-5 {
+    &>* {
+      padding: calc(var(--spacing) * 5);
+    }
+  }
+  .\[\&\>\*\]\:p-10 {
+    &>* {
+      padding: calc(var(--spacing) * 10);
     }
   }
 }
