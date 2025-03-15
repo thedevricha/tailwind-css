@@ -52,6 +52,7 @@
     --color-teal-300: oklch(0.855 0.138 181.071);
     --color-teal-400: oklch(0.777 0.152 181.912);
     --color-teal-500: oklch(0.704 0.14 182.503);
+    --color-teal-900: oklch(0.386 0.063 188.416);
     --color-cyan-400: oklch(0.789 0.154 211.53);
     --color-sky-300: oklch(0.828 0.111 230.318);
     --color-sky-500: oklch(0.685 0.169 237.323);
@@ -66,6 +67,7 @@
     --color-blue-800: oklch(0.424 0.199 265.638);
     --color-blue-950: oklch(0.282 0.091 267.935);
     --color-indigo-400: oklch(0.673 0.182 276.935);
+    --color-violet-500: oklch(0.606 0.25 292.717);
     --color-purple-300: oklch(0.827 0.119 306.383);
     --color-purple-400: oklch(0.714 0.203 305.504);
     --color-purple-500: oklch(0.627 0.265 303.9);
@@ -80,6 +82,7 @@
     --color-pink-950: oklch(0.284 0.109 3.907);
     --color-rose-400: oklch(0.712 0.194 13.428);
     --color-rose-500: oklch(0.645 0.246 16.439);
+    --color-rose-900: oklch(0.41 0.159 10.272);
     --color-slate-200: oklch(0.929 0.013 255.508);
     --color-slate-400: oklch(0.704 0.04 256.788);
     --color-slate-500: oklch(0.554 0.046 257.417);
@@ -103,6 +106,7 @@
     --text-9xl--line-height: 1;
     --font-weight-bold: 700;
     --radius-md: 0.375rem;
+    --radius-2xl: 1rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -470,6 +474,12 @@
   .m-20 {
     margin: calc(var(--spacing) * 20);
   }
+  .m-30 {
+    margin: calc(var(--spacing) * 30);
+  }
+  .m-auto {
+    margin: auto;
+  }
   .mx-5 {
     margin-inline: calc(var(--spacing) * 5);
   }
@@ -652,6 +662,9 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
+  }
   .w-100 {
     width: calc(var(--spacing) * 100);
   }
@@ -793,6 +806,9 @@
   }
   .animate-none {
     animation: none;
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
   .touch-pinch-zoom {
     --tw-pinch-zoom: pinch-zoom;
@@ -1177,6 +1193,9 @@
   .rounded {
     border-radius: 0.25rem;
   }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
   .rounded-md {
     border-radius: var(--radius-md);
   }
@@ -1415,6 +1434,9 @@
   .bg-lime-300 {
     background-color: var(--color-lime-300);
   }
+  .bg-lime-500 {
+    background-color: var(--color-lime-500);
+  }
   .bg-orange-300 {
     background-color: var(--color-orange-300);
   }
@@ -1492,6 +1514,9 @@
   }
   .bg-teal-500 {
     background-color: var(--color-teal-500);
+  }
+  .bg-violet-500 {
+    background-color: var(--color-violet-500);
   }
   .bg-yellow-300 {
     background-color: var(--color-yellow-300);
@@ -2341,6 +2366,18 @@
   .transition-normal {
     transition-behavior: normal;
   }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .duration-700 {
+    --tw-duration: 700ms;
+    transition-duration: 700ms;
+  }
+  .duration-1000 {
+    --tw-duration: 1000ms;
+    transition-duration: 1000ms;
+  }
   .ease-in {
     --tw-ease: var(--ease-in);
     transition-timing-function: var(--ease-in);
@@ -2517,6 +2554,69 @@
       }
     }
   }
+  .hover\:scale-125 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 125%;
+        --tw-scale-y: 125%;
+        --tw-scale-z: 125%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:scale-x-50 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 50%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:scale-x-90 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 90%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:scale-y-50 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-y: 50%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:scale-y-90 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-y: 90%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:rotate-45 {
+    &:hover {
+      @media (hover: hover) {
+        rotate: 45deg;
+      }
+    }
+  }
+  .hover\:rotate-90 {
+    &:hover {
+      @media (hover: hover) {
+        rotate: 90deg;
+      }
+    }
+  }
+  .hover\:rotate-180 {
+    &:hover {
+      @media (hover: hover) {
+        rotate: 180deg;
+      }
+    }
+  }
   .hover\:bg-amber-700 {
     &:hover {
       @media (hover: hover) {
@@ -2531,10 +2631,52 @@
       }
     }
   }
+  .hover\:bg-rose-900 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-rose-900);
+      }
+    }
+  }
   .hover\:bg-teal-400 {
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-teal-400);
+      }
+    }
+  }
+  .hover\:bg-teal-900 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-teal-900);
+      }
+    }
+  }
+  .hover\:opacity-2 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 2%;
+      }
+    }
+  }
+  .hover\:opacity-5 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 5%;
+      }
+    }
+  }
+  .hover\:opacity-50 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 50%;
+      }
+    }
+  }
+  .hover\:opacity-95 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 95%;
       }
     }
   }
@@ -2947,6 +3089,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-ease {
   syntax: "*";
   inherits: false;
@@ -2964,10 +3110,6 @@
   inherits: false;
 }
 @property --tw-contain-style {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-duration {
   syntax: "*";
   inherits: false;
 }
