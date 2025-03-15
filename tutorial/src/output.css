@@ -16,7 +16,9 @@
     --color-red-700: oklch(0.505 0.213 27.518);
     --color-red-800: oklch(0.444 0.177 26.899);
     --color-red-950: oklch(0.258 0.092 26.042);
+    --color-orange-300: oklch(0.837 0.128 66.29);
     --color-orange-500: oklch(0.705 0.213 47.604);
+    --color-amber-200: oklch(0.924 0.12 95.746);
     --color-amber-300: oklch(0.879 0.169 91.605);
     --color-amber-400: oklch(0.828 0.189 84.429);
     --color-amber-500: oklch(0.769 0.188 70.08);
@@ -34,6 +36,7 @@
     --color-yellow-700: oklch(0.554 0.135 66.442);
     --color-yellow-800: oklch(0.476 0.114 61.907);
     --color-yellow-950: oklch(0.286 0.066 53.813);
+    --color-lime-300: oklch(0.897 0.196 126.665);
     --color-lime-500: oklch(0.768 0.233 130.85);
     --color-green-50: oklch(0.982 0.018 155.826);
     --color-green-100: oklch(0.962 0.044 156.743);
@@ -45,11 +48,13 @@
     --color-green-700: oklch(0.527 0.154 150.069);
     --color-green-800: oklch(0.448 0.119 151.328);
     --color-green-950: oklch(0.266 0.065 152.934);
+    --color-emerald-300: oklch(0.845 0.143 164.978);
     --color-teal-300: oklch(0.855 0.138 181.071);
     --color-teal-400: oklch(0.777 0.152 181.912);
     --color-teal-500: oklch(0.704 0.14 182.503);
     --color-teal-950: oklch(0.277 0.046 192.524);
     --color-cyan-400: oklch(0.789 0.154 211.53);
+    --color-sky-300: oklch(0.828 0.111 230.318);
     --color-sky-500: oklch(0.685 0.169 237.323);
     --color-blue-50: oklch(0.97 0.014 254.604);
     --color-blue-100: oklch(0.932 0.032 255.585);
@@ -62,8 +67,10 @@
     --color-blue-800: oklch(0.424 0.199 265.638);
     --color-blue-950: oklch(0.282 0.091 267.935);
     --color-indigo-400: oklch(0.673 0.182 276.935);
+    --color-purple-300: oklch(0.827 0.119 306.383);
     --color-purple-400: oklch(0.714 0.203 305.504);
     --color-purple-500: oklch(0.627 0.265 303.9);
+    --color-fuchsia-300: oklch(0.833 0.145 321.434);
     --color-fuchsia-400: oklch(0.74 0.238 322.16);
     --color-pink-400: oklch(0.718 0.202 349.761);
     --color-pink-500: oklch(0.656 0.241 354.308);
@@ -74,6 +81,8 @@
     --color-pink-950: oklch(0.284 0.109 3.907);
     --color-rose-400: oklch(0.712 0.194 13.428);
     --color-rose-500: oklch(0.645 0.246 16.439);
+    --color-slate-200: oklch(0.929 0.013 255.508);
+    --color-slate-300: oklch(0.869 0.022 252.894);
     --color-slate-400: oklch(0.704 0.04 256.788);
     --color-slate-500: oklch(0.554 0.046 257.417);
     --color-zinc-400: oklch(0.705 0.015 286.067);
@@ -594,6 +603,10 @@
   .size-30 {
     width: calc(var(--spacing) * 30);
     height: calc(var(--spacing) * 30);
+  }
+  .size-32 {
+    width: calc(var(--spacing) * 32);
+    height: calc(var(--spacing) * 32);
   }
   .size-50 {
     width: calc(var(--spacing) * 50);
@@ -1331,6 +1344,9 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-amber-200 {
+    background-color: var(--color-amber-200);
+  }
   .bg-amber-300 {
     background-color: var(--color-amber-300);
   }
@@ -1367,6 +1383,12 @@
   .bg-blue-800 {
     background-color: var(--color-blue-800);
   }
+  .bg-emerald-300 {
+    background-color: var(--color-emerald-300);
+  }
+  .bg-fuchsia-300 {
+    background-color: var(--color-fuchsia-300);
+  }
   .bg-green-50 {
     background-color: var(--color-green-50);
   }
@@ -1397,6 +1419,12 @@
   .bg-green-950 {
     background-color: var(--color-green-950);
   }
+  .bg-lime-300 {
+    background-color: var(--color-lime-300);
+  }
+  .bg-orange-300 {
+    background-color: var(--color-orange-300);
+  }
   .bg-orange-500 {
     background-color: var(--color-orange-500);
   }
@@ -1420,6 +1448,12 @@
   }
   .bg-pink-950 {
     background-color: var(--color-pink-950);
+  }
+  .bg-purple-300 {
+    background-color: var(--color-purple-300);
+  }
+  .bg-purple-500 {
+    background-color: var(--color-purple-500);
   }
   .bg-red-300 {
     background-color: var(--color-red-300);
@@ -1448,8 +1482,17 @@
   .bg-rose-500 {
     background-color: var(--color-rose-500);
   }
+  .bg-sky-300 {
+    background-color: var(--color-sky-300);
+  }
   .bg-sky-500 {
     background-color: var(--color-sky-500);
+  }
+  .bg-slate-200 {
+    background-color: var(--color-slate-200);
+  }
+  .bg-slate-300 {
+    background-color: var(--color-slate-300);
   }
   .bg-slate-500 {
     background-color: var(--color-slate-500);
@@ -1459,6 +1502,9 @@
   }
   .bg-teal-500 {
     background-color: var(--color-teal-500);
+  }
+  .bg-yellow-300 {
+    background-color: var(--color-yellow-300);
   }
   .bg-yellow-500 {
     background-color: var(--color-yellow-500);
@@ -2538,6 +2584,11 @@
   .sm\:columns-2 {
     @media (width >= 40rem) {
       columns: 2;
+    }
+  }
+  .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
     }
   }
   .sm\:bg-purple-500 {
