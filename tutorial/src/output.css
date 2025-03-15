@@ -44,6 +44,8 @@
     --color-green-800: oklch(0.448 0.119 151.328);
     --color-green-950: oklch(0.266 0.065 152.934);
     --color-teal-300: oklch(0.855 0.138 181.071);
+    --color-teal-400: oklch(0.777 0.152 181.912);
+    --color-teal-950: oklch(0.277 0.046 192.524);
     --color-cyan-400: oklch(0.789 0.154 211.53);
     --color-blue-50: oklch(0.97 0.014 254.604);
     --color-blue-100: oklch(0.932 0.032 255.585);
@@ -77,6 +79,7 @@
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-bold: 700;
+    --radius-md: 0.375rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -434,6 +437,9 @@
   }
   .m-0 {
     margin: calc(var(--spacing) * 0);
+  }
+  .m-4 {
+    margin: calc(var(--spacing) * 4);
   }
   .m-5 {
     margin: calc(var(--spacing) * 5);
@@ -1120,6 +1126,9 @@
   .rounded {
     border-radius: 0.25rem;
   }
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
   .rounded-s {
     border-start-start-radius: 0.25rem;
     border-end-start-radius: 0.25rem;
@@ -1301,8 +1310,14 @@
   .bg-blue-300 {
     background-color: var(--color-blue-300);
   }
+  .bg-blue-400 {
+    background-color: var(--color-blue-400);
+  }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
+  }
+  .bg-blue-700 {
+    background-color: var(--color-blue-700);
   }
   .bg-blue-800 {
     background-color: var(--color-blue-800);
@@ -1625,6 +1640,9 @@
   }
   .object-top {
     object-position: top;
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
@@ -2395,6 +2413,59 @@
       @media (hover: hover) {
         background-color: var(--color-amber-700);
       }
+    }
+  }
+  .hover\:bg-blue-950 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-950);
+      }
+    }
+  }
+  .hover\:bg-red-400 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-red-400);
+      }
+    }
+  }
+  .hover\:bg-red-950 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-red-950);
+      }
+    }
+  }
+  .hover\:bg-teal-400 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-teal-400);
+      }
+    }
+  }
+  .focus\:bg-blue-950 {
+    &:focus {
+      background-color: var(--color-blue-950);
+    }
+  }
+  .focus\:bg-teal-400 {
+    &:focus {
+      background-color: var(--color-teal-400);
+    }
+  }
+  .focus\:bg-teal-950 {
+    &:focus {
+      background-color: var(--color-teal-950);
+    }
+  }
+  .active\:bg-blue-950 {
+    &:active {
+      background-color: var(--color-blue-950);
+    }
+  }
+  .active\:bg-teal-400 {
+    &:active {
+      background-color: var(--color-teal-400);
     }
   }
   .\[\&\>\*\]\:flex {
