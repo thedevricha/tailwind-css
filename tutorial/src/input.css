@@ -4,4 +4,13 @@
     --breakpoint-md:900px; /* Default breakpoint */
     --breakpoint-lg:1000px; /* Default breakpoint */
     --breakpoint-big:1300px; /* Extended breakpoint */
+    --padding-1: 50px; /* Default padding */
+    --padding-custom-65: 65px; /* Custom padding */
+    --padding-wrapper: 40px; /* Custom padding */
+    --margin-20: 20px; /* Default margin */
+    --margin-custom-78: 78px; /* Custom margin */
+    --height-125: 125px; /* Default height */
+    --weight-125: 125px; /* Default weight */
+    --size-125: 125px; /* Default size */
+    --size-custom-78: 78px;
 }
