@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 @theme{
     --breakpoint-sm:700px; /* Default breakpoint */
     --breakpoint-md:900px; /* Default breakpoint */

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" id="root" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark mode on button click with Tailwind</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <script>
+        function changeMode(){
+            const element = document.getElementById("root");
+            if(element.className == 'dark'){
+                document.getElementById("root").className = '';
+            }else{
+                document.getElementById("root").className = 'dark';
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-slate-800">
+    <div class="h-screen flex items-center justify-center flex-wrap">
+        <h1 class="text-yellow-500 text-custom-35 font-bold text-center dark:text-white">Light/ Dark mode on button click</h1>
+        <div class="w-full text-center">
+            <button class="bg-slate-700 text-white text-custom-20 rounded-2xl pt-5 pb-5 pl-10 pr-10 cursor-pointer hover:bg-slate-900 transition duration-1000 dark:text-white dark:bg-yellow-500 dark:hover:bg-yellow-900" onclick="changeMode()">Switch to <span class="dark:hidden">Dark Mode</span><span class="hidden dark:inline">Light Mode</span></button>
+        </div>
+    </div>
+</body>
+</html>
