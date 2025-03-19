@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark mode with Tailwind</title>
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+<body class="bg-white dark:bg-slate-800">
+    <div class="h-screen flex items-center justify-center flex-wrap">
+        <h1 class="text-purple-700 text-custom-35 font-bold text-center dark:text-white">Light/ Dark mode with operating system theme</h1>
+        <div class="w-full text-center">
+            <button class="bg-slate-700 text-white text-custom-20 rounded-2xl pt-5 pb-5 pl-10 pr-10 cursor-pointer hover:bg-slate-900 transition duration-1000 dark:text-white dark:bg-yellow-500 dark:hover:bg-yellow-900"><span class="hidden dark:inline">Dark Mode</span><span class="inline dark:hidden">Light Mode</span></button>
+        </div>
+    </div>
+</body>
+</html>
