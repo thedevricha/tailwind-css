@@ -57,13 +57,16 @@
 		@apply bg-slate-500 hover:bg-black text-white border-black;
 	}
 
-    .custom-container {
-        @apply bg-yellow-700;
-        margin: --spacing(4);
-        @variant lg {
-            @apply bg-rose-300;
-        }
-    }
+	.custom-container {
+		@apply bg-yellow-700;
+		margin: --spacing(4);
+		@variant lg {
+			@apply bg-rose-300;
+		}
+	}
+	.img-gallery {
+		@apply w-40 rounded border-2 border-pink-600 hover:scale-110 transition duration-1000 hover:brightness-110 hover:border-2 hover:border-pink-300;
+	}
 }
 
 @theme {
