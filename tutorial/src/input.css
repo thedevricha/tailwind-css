@@ -60,14 +60,10 @@
     .custom-container {
         @apply bg-yellow-700;
         margin: --spacing(4);
-    }
-
-    body{
         @variant lg {
             @apply bg-rose-300;
         }
     }
-    
 }
 
 @theme {

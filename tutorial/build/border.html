@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Border with Tailwind</title>
+		<link rel="stylesheet" href="../src/output.css" />
+	</head>
+	<body>
+		<div class="border m-10 w-96 p-4">Basic Border</div>
+		<div class="border-4 m-10 w-96 p-4">Border width</div>
+		<div class="border-4 border-cyan-300 m-10 w-96 p-4">Border color</div>
+		<div
+			class="border-4 border-t-green-300 border-b-pink-300 border-l-slate-300 border-r-purple-300 m-10 w-96 p-4"
+		>
+			Border color 4 side
+		</div>
+		<div
+			class="border-4 border-lime-300 m-10 w-96 p-4 border-t-10 border-b-20 border-l-0 border-r-15"
+		>
+			Border width 4 side
+		</div>
+		<div class="border-4 border-sky-300 m-10 size-50 p-[50px] rounded-full">
+			Rounded Border
+		</div>
+        <div class="border-4 border-orange-500 m-10 size-50 p-[40px] rounded-t-full">
+			Top Rounded Border
+		</div>
+        <div class="border-4 border-emerald-500 m-10 p-[40px] rounded-lg">
+			Rounded Corner Border
+		</div>
+        <div class="border-4 border-fuchsia-500 m-10 p-[40px] rounded-ss-full">
+			Rounded Corner from 1 side Border
+		</div>
+        <div class="border-4 border-indigo-500 m-10 p-[40px] rounded-es-2xl">
+			Rounded Corner from 1 side Border
+		</div>
+        <div class="border-4 border-indigo-500 m-10 p-[40px] border-double">
+			Border Style
+		</div>
+	</body>
+</html>
