@@ -29,5 +29,8 @@ Just basic understanding of HTML and CSS
 
 # Learning Resources
 1) Get started with Tailwind CSS => https://tailwindcss.com/docs/installation/tailwind-cli
-2) Tailwind CSS Full Course for Beginners | Complete All-in-One Tutorial | 3 Hours =>  https://www.youtube.com/watch?v=lCxcTsOHrjo
-3) Tailwind css tutorial Hindi => https://www.youtube.com/playlist?list=PL8p2I9GklV471sLqkGuf0eKAu9sVNmKFV
+2) CSS at-rule: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_syntax/At-rule
+3) CSS at-rule: https://css-tricks.com/the-at-rules-of-css/
+4) Tailwind Directives: https://tailwindcss.com/docs/functions-and-directives
+5) Tailwind CSS Full Course for Beginners | Complete All-in-One Tutorial | 3 Hours =>  https://www.youtube.com/watch?v=lCxcTsOHrjo
+6) Tailwind css tutorial Hindi => https://www.youtube.com/playlist?list=PL8p2I9GklV471sLqkGuf0eKAu9sVNmKFV

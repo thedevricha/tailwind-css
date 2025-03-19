@@ -19,6 +19,7 @@
     --color-orange-300: oklch(0.837 0.128 66.29);
     --color-orange-500: oklch(0.705 0.213 47.604);
     --color-orange-800: oklch(0.47 0.157 37.304);
+    --color-orange-900: oklch(0.408 0.123 38.172);
     --color-amber-200: oklch(0.924 0.12 95.746);
     --color-amber-300: oklch(0.879 0.169 91.605);
     --color-amber-400: oklch(0.828 0.189 84.429);
@@ -2106,9 +2107,6 @@
   .text-yellow-500 {
     color: var(--color-yellow-500);
   }
-  .text-yellow-800 {
-    color: var(--color-yellow-800);
-  }
   .capitalize {
     text-transform: capitalize;
   }
@@ -2922,6 +2920,37 @@
     &>* {
       padding: calc(var(--spacing) * 5);
     }
+  }
+}
+@layer base {
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 70px;
+  }
+  h3 {
+    font-size: 60px;
+  }
+  h4 {
+    font-size: 50px;
+  }
+  h5 {
+    font-size: 40px;
+  }
+  h6 {
+    font-size: 30px;
+  }
+  button {
+    border: 1px solid #000000;
+    padding: 10px 20px;
+  }
+  p {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-orange-900);
   }
 }
 @property --tw-translate-x {

@@ -1,5 +1,32 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+@layer base{
+    h1{
+        font-size: 80px;
+    }
+    h2{
+        font-size: 70px;
+    }
+    h3{
+        font-size: 60px;
+    }
+    h4{
+        font-size: 50px;
+    }
+    h5{
+        font-size: 40px;
+    }
+    h6{
+        font-size: 30px;
+    }
+    button{
+        border: 1px solid #000000;
+        padding: 10px 20px;
+    }
+    p{
+        @apply text-2xl font-bold text-orange-900;
+    }
+}
 @theme{
     --breakpoint-sm:700px; /* Default breakpoint */
     --breakpoint-md:900px; /* Default breakpoint */
