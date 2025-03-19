@@ -59,6 +59,8 @@
     --color-teal-900: oklch(0.386 0.063 188.416);
     --color-cyan-300: oklch(0.865 0.127 207.078);
     --color-cyan-400: oklch(0.789 0.154 211.53);
+    --color-cyan-500: oklch(0.715 0.143 215.221);
+    --color-cyan-600: oklch(0.609 0.126 221.723);
     --color-cyan-800: oklch(0.45 0.085 224.283);
     --color-sky-300: oklch(0.828 0.111 230.318);
     --color-sky-500: oklch(0.685 0.169 237.323);
@@ -75,7 +77,6 @@
     --color-indigo-400: oklch(0.673 0.182 276.935);
     --color-violet-500: oklch(0.606 0.25 292.717);
     --color-violet-600: oklch(0.541 0.281 293.009);
-    --color-violet-900: oklch(0.38 0.189 293.745);
     --color-purple-300: oklch(0.827 0.119 306.383);
     --color-purple-400: oklch(0.714 0.203 305.504);
     --color-purple-500: oklch(0.627 0.265 303.9);
@@ -93,14 +94,17 @@
     --color-rose-400: oklch(0.712 0.194 13.428);
     --color-rose-500: oklch(0.645 0.246 16.439);
     --color-rose-600: oklch(0.586 0.253 17.585);
+    --color-slate-100: oklch(0.968 0.007 247.896);
     --color-slate-200: oklch(0.929 0.013 255.508);
     --color-slate-400: oklch(0.704 0.04 256.788);
     --color-slate-500: oklch(0.554 0.046 257.417);
+    --color-slate-600: oklch(0.446 0.043 257.281);
     --color-slate-700: oklch(0.372 0.044 257.287);
     --color-slate-800: oklch(0.279 0.041 260.031);
     --color-slate-900: oklch(0.208 0.042 265.755);
     --color-zinc-400: oklch(0.705 0.015 286.067);
     --color-stone-500: oklch(0.553 0.013 58.071);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-xs: 20rem;
@@ -2927,15 +2931,84 @@
   }
 }
 @layer components {
-  .btn-primary {
+  .btn {
     cursor: pointer;
     border-radius: var(--radius-sm);
-    background-color: var(--color-violet-500);
-    padding: 10px;
+    padding-inline: calc(var(--spacing) * 5);
+    padding-block: calc(var(--spacing) * 1.5);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-slate-100);
+      }
+    }
+  }
+  .btn-primary {
+    border-color: var(--color-blue-500);
+    background-color: var(--color-blue-500);
     color: var(--color-white);
     &:hover {
       @media (hover: hover) {
-        background-color: var(--color-violet-900);
+        background-color: var(--color-blue-600);
+      }
+    }
+  }
+  .btn-secondary {
+    border-color: var(--color-slate-500);
+    background-color: var(--color-slate-500);
+    color: var(--color-white);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-slate-600);
+      }
+    }
+  }
+  .btn-success {
+    border-color: var(--color-green-500);
+    background-color: var(--color-green-500);
+    color: var(--color-white);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-green-600);
+      }
+    }
+  }
+  .btn-danger {
+    border-color: var(--color-red-500);
+    background-color: var(--color-red-500);
+    color: var(--color-white);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-red-600);
+      }
+    }
+  }
+  .btn-warning {
+    border-color: var(--color-yellow-500);
+    background-color: var(--color-yellow-500);
+    color: var(--color-black);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-yellow-600);
+      }
+    }
+  }
+  .btn-info {
+    border-color: var(--color-cyan-500);
+    background-color: var(--color-cyan-500);
+    color: var(--color-white);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-cyan-600);
+      }
+    }
+  }
+  .btn-dark {
+    border-color: var(--color-black);
+    background-color: var(--color-slate-500);
+    color: var(--color-white);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-black);
       }
     }
   }
