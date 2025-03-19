@@ -1,4 +1,5 @@
 /*! tailwindcss v4.0.9 | MIT License | https://tailwindcss.com */
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -180,6 +181,7 @@
     --size-custom-78: 78px;
     --text-custom-35: 35px;
     --text-custom-20: 20px;
+    --font-barriecito: "Barriecito", "system-ui";
   }
 }
 @layer base {
@@ -754,9 +756,6 @@
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
-  }
-  .w-30 {
-    width: calc(var(--spacing) * 30);
   }
   .w-32 {
     width: calc(var(--spacing) * 32);
@@ -2047,9 +2046,6 @@
   .pl-10 {
     padding-left: calc(var(--spacing) * 10);
   }
-  .pl-20 {
-    padding-left: calc(var(--spacing) * 20);
-  }
   .text-center {
     text-align: center;
   }
@@ -2091,6 +2087,9 @@
   }
   .align-top {
     vertical-align: top;
+  }
+  .font-barriecito {
+    font-family: var(--font-barriecito);
   }
   .font-mono {
     font-family: var(--font-mono);
