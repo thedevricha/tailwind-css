@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dialog Box with Tailwind</title>
+		<link rel="stylesheet" href="../src/output.css" />
+	</head>
+	<body>
+		<div class="bg-gray-500 fixed inset-0"></div>
+		<div class="fixed inset-0">
+			<div class="flex h-full justify-center items-center">
+				<div class="bg-white w-[512px] text-left shadow-xl rounded">
+                    <div class="p-5">
+                        <div class="flex items-start">
+                            <img src="../images/image.jpg" class="w-8">
+                            <div class="ml-4">
+                                <h3 class="text-gray-800 font-semibold">Deactivate Account</h3>
+                                <div class="m-2">
+                                    <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit tenetur maiores id perferendis voluptatibus beatae dolorem sit ducimus nesciunt mollitia, eveniet dolores, blanditiis optio, eaque sapiente autem recusandae deleniti?</p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="bg-gray-100 px-3 py-3 flex flex-row-reverse rounded">
+                        <button class="bg-red-600 text-white font-semibold ml-3 rounded-md px-3 py-2 hover:bg-red-500">Deactivate</button>
+                        <button class="bg-white font-semibold ml-3 shadow-sm ring-1 ring-inset ring-gray-300 rounded-md px-3 py-2 hover:bg-gray-300">Cancel</button>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</body>
+</html>
