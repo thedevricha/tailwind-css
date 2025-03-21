@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 /* @layer base{
@@ -87,4 +88,5 @@
 	--text-custom-35: 35px;
 	--text-custom-20: 20px;
 	--font-barriecito: "Barriecito", "system-ui";
+	--font-roboto: "Roboto", "sans-serif";
 }
