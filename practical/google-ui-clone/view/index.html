@@ -76,41 +76,94 @@
 			<!-- Search section -->
 			<div class="w-full max-w-[37rem]">
 				<div class="relative">
-					<!-- Input filed -->
-					<div class="group">
+					<!-- Input field -->
+					<div class="group relative">
 						<input
 							type="text"
-							name=""
-							id=""
-							class="w-full border border-gray-200 bg-white rounded-full py-3 px-12 shadow-[0_2px_8px_0_rgba(60,64,67,0.25)] hover:shadow-[0_2px_8px_1px_rgba(60,64,67,0.24)] hover:border-transparent outline-0"
+							name="search"
+							id="search"
+							class="w-full border rounded-3xl border-gray-200 bg-white py-3 px-12 shadow-[0_2px_8px_0_rgba(60,64,67,0.25)] hover:shadow-[0_2px_8px_1px_rgba(60,64,67,0.24)] outline-0 group-focus-within:border-b-transparent group-focus-within:rounded-tl-3xl group-focus-within:rounded-tr-3xl group-focus-within:rounded-bl-none group-focus-within:rounded-br-none"
 						/>
-						<!-- Suggestion list -->
+
+						<!-- Suggestion list - Hidden by default, shown on focus -->
 						<div
-							class="opacity-0 group-focus-within:opacity-100 transition-opacity shadow-[0_2px_8px_1px_rgba(60,64,67,0.24)]"
+							class="absolute left-0 right-0 mt-1 opacity-0 bg-white group-focus-within:opacity-100 transition-opacity  shadow-[0_2px_8px_0_rgba(60,64,67,0.25)] rounded-lg overflow-hidden z-10 border-t-0 rounded-t-none top-[45px] border-t-transparent"
 						>
-							<ul class="flex justify-start">
-								<li class="w-full">Trending searches</li>
-								<li class="w-full">
-									<!-- Trending icon -->
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										height="20px"
-										viewBox="0 -960 960 960"
-										width="20px"
-										fill="#434343"
-									>
-										<path
-											d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
-										/>
-									</svg>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									</p>
+							<ul class="py-2 px-4">
+								<li class="text-sm text-gray-500 font-normal pt-4 border-t-1 border-t-gray-200 ">
+									Trending searches
 								</li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
+
+								<li class="hover:bg-gray-100 rounded-md">
+									<div class="flex items-center py-1.5 cursor-pointer">
+										<!-- Trending icon -->
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											height="20px"
+											viewBox="0 -960 960 960"
+											width="20px"
+											fill="#999999"
+										>
+											<path
+												d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
+											/>
+										</svg>
+										<p class="text-[16px] pl-3">Latest AI technologies in 2025</p>
+									</div>
+								</li>
+
+								<li class="hover:bg-gray-100 rounded-md">
+									<div class="flex items-center py-1.5 cursor-pointer">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											height="20px"
+											viewBox="0 -960 960 960"
+											width="20px"
+											fill="#999999"
+										>
+											<path
+												d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
+											/>
+										</svg>
+										<p class="text-[16px] pl-3">
+											How to use Tailwind CSS effectively
+										</p>
+									</div>
+								</li>
+
+								<li class="hover:bg-gray-100 rounded-md">
+									<div class="flex items-center py-1.5 cursor-pointer">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											height="20px"
+											viewBox="0 -960 960 960"
+											width="20px"
+											fill="#999999"
+										>
+											<path
+												d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
+											/>
+										</svg>
+										<p class="text-[16px] pl-3">Web development roadmap 2025</p>
+									</div>
+								</li>
+
+								<li class="hover:bg-gray-100 rounded-md">
+									<div class="flex items-center py-1.5 cursor-pointer">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											height="20px"
+											viewBox="0 -960 960 960"
+											width="20px"
+											fill="#999999"
+										>
+											<path
+												d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
+											/>
+										</svg>
+										<p class="text-[16px] pl-3">Google I/O conference updates</p>
+									</div>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -128,6 +181,7 @@
 							d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
 						/>
 					</svg>
+
 					<!-- Google voice icon -->
 					<div class="w-6 h-6 right-12 top-3 absolute cursor-pointer group">
 						<svg
@@ -152,7 +206,7 @@
 
 						<!-- Tooltip -->
 						<div
-							class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1.5 text-xs text-white bg-gray-800 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
+							class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1.5 text-xs text-white bg-gray-800 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity rounded pointer-events-none z-10"
 						>
 							Search by voice
 							<div
@@ -186,9 +240,10 @@
 								></path>
 							</g>
 						</svg>
+
 						<!-- Tooltip -->
 						<div
-							class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1.5 text-xs text-white bg-gray-800 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
+							class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1.5 text-xs text-white bg-gray-800 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity rounded pointer-events-none z-10"
 						>
 							Search by image
 							<div
