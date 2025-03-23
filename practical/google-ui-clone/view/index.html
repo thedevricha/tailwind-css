@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Google</title>
+		<link rel="icon" type="image/x-icon" href="../images/google.png" />
+		<link rel="stylesheet" href="../src/output.css" />
+	</head>
+	<body class="bg-white font-roboto flex flex-col min-h-screen">
+		<header class="flex justify-between text-[14px]">
+			<!-- Left section -->
+			<div class="flex p-5 text-center justify-start items-center">
+				<div class="flex space-x-4 font-normal">
+					<a href="" class="text-gray-600 hover:underline decoration-[1.5px]"
+						>About</a
+					>
+					<a href="" class="text-gray-600 hover:underline decoration-[1.5px]"
+						>Store</a
+					>
+				</div>
+			</div>
+			<!-- Right section -->
+			<div class="flex p-4 text-center justify-start">
+				<div class="flex space-x-4 font-normal items-center">
+					<a href="" class="text-gray-800 hover:underline decoration-[1.5px]"
+						>Gmail</a
+					>
+					<a href="" class="text-gray-800 hover:underline decoration-[1.5px]"
+						>Images</a
+					>
+					<!-- Google apps icon -->
+					<div
+						class="relative cursor-pointer group p-2.5 hover:bg-gray-100 rounded-full"
+					>
+						<a href="#">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="24px"
+								viewBox="0 -960 960 960"
+								width="24px"
+								fill="#444746"
+							>
+								<path
+									d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"
+								/>
+							</svg>
+						</a>
+						<!-- Tooltip -->
+						<div
+							class="absolute left-1/2 -translate-x-1/2 top-full mt-1 w-max px-3 py-1.5 text-xs text-white bg-gray-600 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
+						>
+							Google apps
+							<!-- <div
+								class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-gray-800"
+							></div> -->
+						</div>
+					</div>
+
+					<!-- Sign in button -->
+					<button
+						class="bg-blue-700 pt-2.5 pb-2.5 pl-3 pr-3 rounded-full text-white min-w-21.5 cursor-pointer hover:shadow shadow-gray-600"
+					>
+						Sign in
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="flex flex-1 items-center justify-center flex-col">
+			<!-- Google logo -->
+			<img
+				src="https://www.google.co.in/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+				alt="Google logo"
+				class="w-68 mb-8"
+			/>
+			<!-- Search section -->
+			<div class="w-full max-w-[37rem]">
+				<div class="relative">
+					<!-- Input filed -->
+					<div class="group">
+						<input
+							type="text"
+							name=""
+							id=""
+							class="w-full border border-gray-200 bg-white rounded-full py-3 px-12 shadow-[0_2px_8px_0_rgba(60,64,67,0.25)] hover:shadow-[0_2px_8px_1px_rgba(60,64,67,0.24)] hover:border-transparent outline-0"
+						/>
+						<!-- Suggestion list -->
+						<div
+							class="opacity-0 group-focus-within:opacity-100 transition-opacity shadow-[0_2px_8px_1px_rgba(60,64,67,0.24)]"
+						>
+							<ul class="flex justify-start">
+								<li class="w-full">Trending searches</li>
+								<li class="w-full">
+									<!-- Trending icon -->
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										height="20px"
+										viewBox="0 -960 960 960"
+										width="20px"
+										fill="#434343"
+									>
+										<path
+											d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
+										/>
+									</svg>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									</p>
+								</li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Search icon -->
+					<svg
+						class="left-3 top-4 absolute fill-gray-400"
+						xmlns="http://www.w3.org/2000/svg"
+						height="20px"
+						viewBox="0 -960 960 960"
+						width="20px"
+						fill="#434343"
+					>
+						<path
+							d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+						/>
+					</svg>
+					<!-- Google voice icon -->
+					<div class="w-6 h-6 right-12 top-3 absolute cursor-pointer group">
+						<svg
+							focusable="false"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill="#4285f4"
+								d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"
+							></path>
+							<path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path>
+							<path
+								fill="#fbbc04"
+								d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"
+							></path>
+							<path
+								fill="#ea4335"
+								d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"
+							></path>
+						</svg>
+
+						<!-- Tooltip -->
+						<div
+							class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1.5 text-xs text-white bg-gray-800 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
+						>
+							Search by voice
+							<div
+								class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-gray-800"
+							></div>
+						</div>
+					</div>
+
+					<!-- Google lens icon -->
+					<div class="w-6 h-6 right-3 top-3 absolute cursor-pointer group">
+						<svg
+							focusable="false"
+							viewBox="0 0 192 192"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<rect fill="none" height="192" width="192"></rect>
+							<g>
+								<circle fill="#34a853" cx="144.07" cy="144" r="16"></circle>
+								<circle fill="#4285f4" cx="96.07" cy="104" r="24"></circle>
+								<path
+									fill="#ea4335"
+									d="M24,135.2c0,18.11,14.69,32.8,32.8,32.8H96v-16l-40.1-0.1c-8.8,0-15.9-8.19-15.9-17.9v-18H24V135.2z"
+								></path>
+								<path
+									fill="#fbbc04"
+									d="M168,72.8c0-18.11-14.69-32.8-32.8-32.8H116l20,16c8.8,0,16,8.29,16,18v30h16V72.8z"
+								></path>
+								<path
+									fill="#4285f4"
+									d="M112,24l-32,0L68,40H56.8C38.69,40,24,54.69,24,72.8V92h16V74c0-9.71,7.2-18,16-18h80L112,24z"
+								></path>
+							</g>
+						</svg>
+						<!-- Tooltip -->
+						<div
+							class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1.5 text-xs text-white bg-gray-800 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
+						>
+							Search by image
+							<div
+								class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-gray-800"
+							></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Two buttons -->
+			<div class="flex justify-center mt-8 text-[14px]">
+				<button
+					class="bg-gray-100 text-gray-700 rounded py-2 px-4 mr-3 min-w-13 h-9 cursor-pointer border border-transparent hover:border-gray-200 hover:shadow-[0_1px_1px_0px_rgba(0,0,0,0.24)]"
+				>
+					Google Search
+				</button>
+				<button
+					class="bg-gray-100 text-gray-700 rounded py-2 px-4 min-w-13 h-9 cursor-pointer border border-transparent hover:border-gray-200 hover:shadow-[0_1px_1px_0px_rgba(0,0,0,0.24)]"
+				>
+					I'm Feeling Lucky
+				</button>
+			</div>
+			<!-- Languages links -->
+			<div class="flex justify-between mt-3 text-[13px]">
+				<div class="flex p-4 text-center justify-start">
+					<div class="flex space-x-3 font-medium">
+						<span class="font-normal text-gray-700">Google offered in:</span>
+						<a href="" class="text-blue-900 font-normal hover:underline"
+							>हिन्दी</a
+						>
+						<a href="" class="text-blue-900 font-normal hover:underline"
+							>বাংলা</a
+						>
+						<a href="" class="text-blue-900 font-normal hover:underline"
+							>తెలుగు</a
+						>
+						<a href="" class="text-blue-900 font-normal hover:underline"
+							>मराठी</a
+						>
+						<a href="" class="text-blue-900 font-normal hover:underline"
+							>தமிழ்</a
+						>
+						<a href="" class="text-blue-900 font-normal hover:underline"
+							>ગુજરાતી</a
+						>
+						<a href="" class="text-blue-900 font-normal hover:underline"
+							>ಕನ್ನಡ</a
+						>
+						<a href="" class="text-blue-900 font-normal hover:underline"
+							>മലയാളം</a
+						>
+						<a href="" class="text-blue-900 font-normal hover:underline"
+							>ਪੰਜਾਬੀ</a
+						>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="bg-gray-100 w-full text-gray-700 text-[14px]">
+			<!-- Top section -->
+			<div
+				class="border-b border-gray-200 py-4 px-7.5 text-gray-800 text-[15px]"
+			>
+				India
+			</div>
+			<!-- Bottom section -->
+			<div class="flex justify-between py-4 px-7.5">
+				<ul class="flex space-x-9">
+					<li>
+						<a href="#" class="text-gray-800 hover:underline decoration-[1.5px]"
+							>Advertising</a
+						>
+					</li>
+					<li>
+						<a href="#" class="text-gray-800 hover:underline decoration-[1.5px]"
+							>Business</a
+						>
+					</li>
+					<li>
+						<a href="#" class="text-gray-800 hover:underline decoration-[1.5px]"
+							>How Search works</a
+						>
+					</li>
+				</ul>
+				<ul class="flex space-x-4">
+					<li>
+						<a href="#" class="text-gray-800 hover:underline decoration-[1.5px]"
+							>Privacy</a
+						>
+					</li>
+					<li>
+						<a href="#" class="text-gray-800 hover:underline decoration-[1.5px]"
+							>Terms</a
+						>
+					</li>
+					<li>
+						<a href="#" class="text-gray-800 hover:underline decoration-[1.5px]"
+							>Settings</a
+						>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>
