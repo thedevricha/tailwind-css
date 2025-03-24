@@ -1,1 +1,6 @@
 @import "tailwindcss";
+@layer components {
+    .shadow-except-top {
+        box-shadow: rgba(60, 64, 67, 0.24) 0px 5px 8px -5px,rgba(60, 64, 67, 0.24) 0px 10px 20px -5px;
+    }
+}

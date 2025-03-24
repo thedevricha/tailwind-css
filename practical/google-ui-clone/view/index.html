@@ -82,19 +82,24 @@
 							type="text"
 							name="search"
 							id="search"
-							class="w-full border rounded-3xl border-gray-200 bg-white py-3 px-12 shadow-[0_2px_8px_0_rgba(60,64,67,0.25)] hover:shadow-[0_2px_8px_1px_rgba(60,64,67,0.24)] outline-0 group-focus-within:border-b-transparent group-focus-within:rounded-tl-3xl group-focus-within:rounded-tr-3xl group-focus-within:rounded-bl-none group-focus-within:rounded-br-none"
+							autocomplete="off"
+							class="w-full border rounded-3xl border-gray-200 bg-white py-3 px-12 shadow-[0_2px_8px_0_rgba(60,64,67,0.25)] hover:shadow-[0_2px_8px_1px_rgba(60,64,67,0.24)] outline-0 group-focus-within:border-b-transparent group-focus-within:rounded-tl-3xl group-focus-within:rounded-tr-3xl group-focus-within:rounded-bl-none group-focus-within:rounded-br-none group-focus-within:shadow-[0_2px_8px_0_rgba(60,64,67,0.25)]"
 						/>
 
 						<!-- Suggestion list - Hidden by default, shown on focus -->
 						<div
-							class="absolute left-0 right-0 mt-1 opacity-0 bg-white group-focus-within:opacity-100 transition-opacity  shadow-[0_2px_8px_0_rgba(60,64,67,0.25)] rounded-lg overflow-hidden z-10 border-t-0 rounded-t-none top-[45px] border-t-transparent"
+							class="absolute left-0 right-0 mt-[-1px] hidden bg-white transition-all duration-150 overflow-hidden  border border-t-0 border-gray-200 rounded-br-3xl rounded-bl-3xl group-focus-within:block shadow-except-top"
 						>
-							<ul class="py-2 px-4">
-								<li class="text-sm text-gray-500 font-normal pt-4 border-t-1 border-t-gray-200 ">
-									Trending searches
+							<ul>
+								<li class="py-1 px-4">
+									<p
+										class="text-sm text-gray-500 font-normal pt-2 border-t-1 border-t-gray-200"
+									>
+										Trending searches
+									</p>
 								</li>
 
-								<li class="hover:bg-gray-100 rounded-md">
+								<li class="hover:bg-gray-100 rounded-md py-0.2 px-4">
 									<div class="flex items-center py-1.5 cursor-pointer">
 										<!-- Trending icon -->
 										<svg
@@ -108,11 +113,13 @@
 												d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
 											/>
 										</svg>
-										<p class="text-[16px] pl-3">Latest AI technologies in 2025</p>
+										<p class="text-[16px] pl-3">
+											Latest AI technologies in 2025
+										</p>
 									</div>
 								</li>
 
-								<li class="hover:bg-gray-100 rounded-md">
+								<li class="hover:bg-gray-100 rounded-md py-0.2 px-4">
 									<div class="flex items-center py-1.5 cursor-pointer">
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +138,7 @@
 									</div>
 								</li>
 
-								<li class="hover:bg-gray-100 rounded-md">
+								<li class="hover:bg-gray-100 rounded-md py-0.2 px-4">
 									<div class="flex items-center py-1.5 cursor-pointer">
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +155,7 @@
 									</div>
 								</li>
 
-								<li class="hover:bg-gray-100 rounded-md">
+								<li class="hover:bg-gray-100 rounded-md py-0.2 px-4">
 									<div class="flex items-center py-1.5 cursor-pointer">
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
@@ -161,10 +168,25 @@
 												d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
 											/>
 										</svg>
-										<p class="text-[16px] pl-3">Google I/O conference updates</p>
+										<p class="text-[16px] pl-3">
+											Google I/O conference updates
+										</p>
 									</div>
 								</li>
 							</ul>
+							<!-- Two buttons -->
+							<div class="flex justify-center my-5 text-[14px]">
+								<button
+									class="bg-gray-100 text-gray-700 rounded py-2 px-4 mr-3 min-w-13 h-9 cursor-pointer border border-transparent hover:border-gray-200 hover:shadow-[0_1px_1px_0px_rgba(0,0,0,0.24)]"
+								>
+									Google Search
+								</button>
+								<button
+									class="bg-gray-100 text-gray-700 rounded py-2 px-4 min-w-13 h-9 cursor-pointer border border-transparent hover:border-gray-200 hover:shadow-[0_1px_1px_0px_rgba(0,0,0,0.24)]"
+								>
+									I'm Feeling Lucky
+								</button>
+							</div>
 						</div>
 					</div>
 
