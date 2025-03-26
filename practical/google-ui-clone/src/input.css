@@ -1,6 +1,47 @@
 @import "tailwindcss";
 @layer components {
-    .shadow-except-top {
-        box-shadow: rgba(60, 64, 67, 0.24) 0px 5px 8px -5px,rgba(60, 64, 67, 0.24) 0px 10px 20px -5px;
-    }
+	.shadow-except-top {
+		box-shadow: rgba(60, 64, 67, 0.24) 0px 5px 8px -5px,
+			rgba(60, 64, 67, 0.24) 0px 10px 20px -5px;
+	}
+	.links {
+		@apply text-gray-800 hover:underline decoration-[1.5px];
+	}
+	.apps-icon-tooltip {
+		@apply absolute left-1/2 -translate-x-1/2 top-full mt-1 w-max px-3 py-1.5 text-xs text-white bg-gray-600 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity;
+	}
+	.input-search {
+		@apply w-full bg-white py-3 px-12 outline-0;
+		/* Border */
+		@apply border rounded-3xl border-gray-200 group-focus-within:border-b-transparent group-focus-within:rounded-tl-3xl group-focus-within:rounded-tr-3xl group-focus-within:rounded-bl-none group-focus-within:rounded-br-none;
+		/* Shadow */
+		@apply shadow-[0_2px_8px_0_rgba(60,64,67,0.25)] group-focus-within:shadow-[0_2px_8px_0_rgba(60,64,67,0.25)];
+	}
+	.input-search:hover {
+		@apply hover:shadow-[0_2px_8px_1px_rgba(60,64,67,0.24)];
+	}
+	.suggestion-list-wrapper {
+		@apply absolute left-0 right-0  bg-white mt-[-1px] hidden overflow-hidden group-focus-within:block;
+		@apply transition-all duration-150;
+		@apply border border-gray-200 border-t-0  rounded-br-3xl rounded-bl-3xl;
+	}
+	.suggestion-li {
+		@apply rounded-md px-4;
+	}
+	.suggestion-li:hover {
+		@apply hover:bg-gray-100;
+	}
+	.search-section-btn {
+		@apply py-2 px-4 min-w-13 h-9 cursor-pointer  bg-gray-100 text-gray-700;
+		@apply rounded border border-transparent;
+	}
+	.search-section-btn:hover {
+		@apply border-gray-200 shadow-[0_1px_1px_0px_rgba(0,0,0,0.24)];
+	}
+	.google-search-btn {
+		@apply mr-3;
+	}
+	.lang-links {
+		@apply text-blue-900 font-normal hover:underline;
+	}
 }

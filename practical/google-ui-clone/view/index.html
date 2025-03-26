@@ -12,23 +12,15 @@
 			<!-- Left section -->
 			<div class="flex p-5 text-center justify-start items-center">
 				<div class="flex space-x-4 font-normal">
-					<a href="" class="text-gray-600 hover:underline decoration-[1.5px]"
-						>About</a
-					>
-					<a href="" class="text-gray-600 hover:underline decoration-[1.5px]"
-						>Store</a
-					>
+					<a href="" class="links">About</a>
+					<a href="" class="links">Store</a>
 				</div>
 			</div>
 			<!-- Right section -->
 			<div class="flex p-4 text-center justify-start">
 				<div class="flex space-x-4 font-normal items-center">
-					<a href="" class="text-gray-800 hover:underline decoration-[1.5px]"
-						>Gmail</a
-					>
-					<a href="" class="text-gray-800 hover:underline decoration-[1.5px]"
-						>Images</a
-					>
+					<a href="" class="links">Gmail</a>
+					<a href="" class="links">Images</a>
 					<!-- Google apps icon -->
 					<div
 						class="relative cursor-pointer group p-2.5 hover:bg-gray-100 rounded-full"
@@ -47,9 +39,7 @@
 							</svg>
 						</a>
 						<!-- Tooltip -->
-						<div
-							class="absolute left-1/2 -translate-x-1/2 top-full mt-1 w-max px-3 py-1.5 text-xs text-white bg-gray-600 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
-						>
+						<div class="apps-icon-tooltip">
 							Google apps
 							<!-- <div
 								class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-gray-800"
@@ -83,13 +73,11 @@
 							name="search"
 							id="search"
 							autocomplete="off"
-							class="w-full border rounded-3xl border-gray-200 bg-white py-3 px-12 shadow-[0_2px_8px_0_rgba(60,64,67,0.25)] hover:shadow-[0_2px_8px_1px_rgba(60,64,67,0.24)] outline-0 group-focus-within:border-b-transparent group-focus-within:rounded-tl-3xl group-focus-within:rounded-tr-3xl group-focus-within:rounded-bl-none group-focus-within:rounded-br-none group-focus-within:shadow-[0_2px_8px_0_rgba(60,64,67,0.25)]"
+							class="input-search"
 						/>
 
 						<!-- Suggestion list - Hidden by default, shown on focus -->
-						<div
-							class="absolute left-0 right-0 mt-[-1px] hidden bg-white transition-all duration-150 overflow-hidden  border border-t-0 border-gray-200 rounded-br-3xl rounded-bl-3xl group-focus-within:block shadow-except-top"
-						>
+						<div class="suggestion-list-wrapper shadow-except-top">
 							<ul>
 								<li class="py-1 px-4">
 									<p
@@ -99,7 +87,7 @@
 									</p>
 								</li>
 
-								<li class="hover:bg-gray-100 rounded-md py-0.2 px-4">
+								<li class="suggestion-li">
 									<div class="flex items-center py-1.5 cursor-pointer">
 										<!-- Trending icon -->
 										<svg
@@ -119,7 +107,7 @@
 									</div>
 								</li>
 
-								<li class="hover:bg-gray-100 rounded-md py-0.2 px-4">
+								<li class="suggestion-li">
 									<div class="flex items-center py-1.5 cursor-pointer">
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +126,7 @@
 									</div>
 								</li>
 
-								<li class="hover:bg-gray-100 rounded-md py-0.2 px-4">
+								<li class="suggestion-li">
 									<div class="flex items-center py-1.5 cursor-pointer">
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
@@ -155,7 +143,7 @@
 									</div>
 								</li>
 
-								<li class="hover:bg-gray-100 rounded-md py-0.2 px-4">
+								<li class="suggestion-li">
 									<div class="flex items-center py-1.5 cursor-pointer">
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
@@ -176,16 +164,10 @@
 							</ul>
 							<!-- Two buttons -->
 							<div class="flex justify-center my-5 text-[14px]">
-								<button
-									class="bg-gray-100 text-gray-700 rounded py-2 px-4 mr-3 min-w-13 h-9 cursor-pointer border border-transparent hover:border-gray-200 hover:shadow-[0_1px_1px_0px_rgba(0,0,0,0.24)]"
-								>
+								<button class="search-section-btn google-search-btn">
 									Google Search
 								</button>
-								<button
-									class="bg-gray-100 text-gray-700 rounded py-2 px-4 min-w-13 h-9 cursor-pointer border border-transparent hover:border-gray-200 hover:shadow-[0_1px_1px_0px_rgba(0,0,0,0.24)]"
-								>
-									I'm Feeling Lucky
-								</button>
+								<button class="search-section-btn">I'm Feeling Lucky</button>
 							</div>
 						</div>
 					</div>
@@ -277,49 +259,25 @@
 			</div>
 			<!-- Two buttons -->
 			<div class="flex justify-center mt-8 text-[14px]">
-				<button
-					class="bg-gray-100 text-gray-700 rounded py-2 px-4 mr-3 min-w-13 h-9 cursor-pointer border border-transparent hover:border-gray-200 hover:shadow-[0_1px_1px_0px_rgba(0,0,0,0.24)]"
-				>
+				<button class="search-section-btn google-search-btn">
 					Google Search
 				</button>
-				<button
-					class="bg-gray-100 text-gray-700 rounded py-2 px-4 min-w-13 h-9 cursor-pointer border border-transparent hover:border-gray-200 hover:shadow-[0_1px_1px_0px_rgba(0,0,0,0.24)]"
-				>
-					I'm Feeling Lucky
-				</button>
+				<button class="search-section-btn">I'm Feeling Lucky</button>
 			</div>
 			<!-- Languages links -->
 			<div class="flex justify-between mt-3 text-[13px]">
 				<div class="flex p-4 text-center justify-start">
 					<div class="flex space-x-3 font-medium">
 						<span class="font-normal text-gray-700">Google offered in:</span>
-						<a href="" class="text-blue-900 font-normal hover:underline"
-							>हिन्दी</a
-						>
-						<a href="" class="text-blue-900 font-normal hover:underline"
-							>বাংলা</a
-						>
-						<a href="" class="text-blue-900 font-normal hover:underline"
-							>తెలుగు</a
-						>
-						<a href="" class="text-blue-900 font-normal hover:underline"
-							>मराठी</a
-						>
-						<a href="" class="text-blue-900 font-normal hover:underline"
-							>தமிழ்</a
-						>
-						<a href="" class="text-blue-900 font-normal hover:underline"
-							>ગુજરાતી</a
-						>
-						<a href="" class="text-blue-900 font-normal hover:underline"
-							>ಕನ್ನಡ</a
-						>
-						<a href="" class="text-blue-900 font-normal hover:underline"
-							>മലയാളം</a
-						>
-						<a href="" class="text-blue-900 font-normal hover:underline"
-							>ਪੰਜਾਬੀ</a
-						>
+						<a href="" class="lang-links">हिन्दी</a>
+						<a href="" class="lang-links">বাংলা</a>
+						<a href="" class="lang-links">తెలుగు</a>
+						<a href="" class="lang-links">मराठी</a>
+						<a href="" class="lang-links">தமிழ்</a>
+						<a href="" class="lang-links">ગુજરાતી</a>
+						<a href="" class="lang-links">ಕನ್ನಡ</a>
+						<a href="" class="lang-links">മലയാളം</a>
+						<a href="" class="lang-links">ਪੰਜਾਬੀ</a>
 					</div>
 				</div>
 			</div>
@@ -335,36 +293,24 @@
 			<div class="flex justify-between py-4 px-7.5">
 				<ul class="flex space-x-9">
 					<li>
-						<a href="#" class="text-gray-800 hover:underline decoration-[1.5px]"
-							>Advertising</a
-						>
+						<a href="#" class="links">Advertising</a>
 					</li>
 					<li>
-						<a href="#" class="text-gray-800 hover:underline decoration-[1.5px]"
-							>Business</a
-						>
+						<a href="#" class="links">Business</a>
 					</li>
 					<li>
-						<a href="#" class="text-gray-800 hover:underline decoration-[1.5px]"
-							>How Search works</a
-						>
+						<a href="#" class="links">How Search works</a>
 					</li>
 				</ul>
 				<ul class="flex space-x-4">
 					<li>
-						<a href="#" class="text-gray-800 hover:underline decoration-[1.5px]"
-							>Privacy</a
-						>
+						<a href="#" class="links">Privacy</a>
 					</li>
 					<li>
-						<a href="#" class="text-gray-800 hover:underline decoration-[1.5px]"
-							>Terms</a
-						>
+						<a href="#" class="links">Terms</a>
 					</li>
 					<li>
-						<a href="#" class="text-gray-800 hover:underline decoration-[1.5px]"
-							>Settings</a
-						>
+						<a href="#" class="links">Settings</a>
 					</li>
 				</ul>
 			</div>
