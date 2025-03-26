@@ -39,9 +39,9 @@ Just basic understanding of HTML and CSS
 6) Tailwind css tutorial Hindi => https://www.youtube.com/playlist?list=PL8p2I9GklV471sLqkGuf0eKAu9sVNmKFV
 
 ## Commands
-1) **npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch**
+1) `npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch`
 => For Compile Tailwind
-2) **npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify**
+2) `npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify`
 => Reduces file size in production.
 
 ## Setup for Efficiency
@@ -65,8 +65,8 @@ export default {
 ✔️ Improves performance by limiting file watching.
 
 ## Tailwind Plugins
-1) **npm install @tailwindcss/forms**
-=> Improves the styling of form elements (`<input>`, `<select>`, `<textarea>`).  
+1) **npm install @tailwindcss/forms**  
+✔️ Improves the styling of form elements (`<input>`, `<select>`, `<textarea>`).  
     🔹 Add to `tailwind.config.js`:
 
     ```javascript
@@ -81,8 +81,8 @@ export default {
     <input type="text" class="form-input border-gray-300 rounded-md">
     ```
 
-2) **npm install @tailwindcss/typography**
-=> Adds pre-styled typography classes for articles, blogs, and markdown content.  
+2) **npm install @tailwindcss/typography**  
+✔️ Adds pre-styled typography classes for articles, blogs, and markdown content.  
    🔹 Add to `tailwind.config.js`:
 
     ```javascript
@@ -100,8 +100,8 @@ export default {
     </article>
     ```
 
-3) **npm install @tailwindcss/aspect-ratio**
-=> Helps maintain fixed aspect ratios (like 16:9, 4:3) for media elements.  
+3) **npm install @tailwindcss/aspect-ratio**  
+✔️ Helps maintain fixed aspect ratios (like 16:9, 4:3) for media elements.  
     🔹 Add to `tailwind.config.js`:
 
     ```javascript
@@ -117,10 +117,10 @@ export default {
     </div>
     ```
 
-    => Keeps videos and images properly scaled!
+    ✔️ Keeps videos and images properly scaled!
 
-4) **npm install daisyui** (https://daisyui.com/)
-=> DaisyUI provides ready-made buttons, forms, modals, alerts, etc.  
+4) **npm install daisyui** (https://daisyui.com/)  
+✔️ DaisyUI provides ready-made buttons, forms, modals, alerts, etc.  
     🔹 Add to ``tailwind.config.js``:
 
     ```javascript
@@ -134,10 +134,10 @@ export default {
     <button class="btn btn-primary">Click Me</button>
     ```
 
-    => Saves time by providing well-designed components!
+    ✔️ Saves time by providing well-designed components!
 
-5) **npm install tailwindcss-debug-screens** (https://github.com/jorenvanhee/tailwindcss-debug-screens)
-=> Shows the current screen size while resizing the window.  
+5) **npm install tailwindcss-debug-screens** (https://github.com/jorenvanhee/tailwindcss-debug-screens)  
+✔️ Shows the current screen size while resizing the window.  
     🔹 Add to `tailwind.config.js`:
 
     ```javascript
@@ -153,4 +153,4 @@ export default {
     </div>
     ```
 
-    => Now it shows active screen size while resizing!
+    ✔️ Now it shows active screen size while resizing!
