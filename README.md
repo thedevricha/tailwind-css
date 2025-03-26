@@ -65,7 +65,7 @@ export default {
 ✔️ Improves performance by limiting file watching.
 
 ## Tailwind Plugins
-1) **npm install @tailwindcss/forms**  
+1) `npm install @tailwindcss/forms`  
 ✔️ Improves the styling of form elements (`<input>`, `<select>`, `<textarea>`).  
     🔹 Add to `tailwind.config.js`:
 
@@ -81,7 +81,7 @@ export default {
     <input type="text" class="form-input border-gray-300 rounded-md">
     ```
 
-2) **npm install @tailwindcss/typography**  
+2) `npm install @tailwindcss/typography`  
 ✔️ Adds pre-styled typography classes for articles, blogs, and markdown content.  
    🔹 Add to `tailwind.config.js`:
 
@@ -100,7 +100,7 @@ export default {
     </article>
     ```
 
-3) **npm install @tailwindcss/aspect-ratio**  
+3) `npm install @tailwindcss/aspect-ratio`  
 ✔️ Helps maintain fixed aspect ratios (like 16:9, 4:3) for media elements.  
     🔹 Add to `tailwind.config.js`:
 
@@ -119,7 +119,7 @@ export default {
 
     ✔️ Keeps videos and images properly scaled!
 
-4) **npm install daisyui** (https://daisyui.com/)  
+4) `npm install daisyui` (https://daisyui.com/)  
 ✔️ DaisyUI provides ready-made buttons, forms, modals, alerts, etc.  
     🔹 Add to ``tailwind.config.js``:
 
@@ -136,7 +136,7 @@ export default {
 
     ✔️ Saves time by providing well-designed components!
 
-5) **npm install tailwindcss-debug-screens** (https://github.com/jorenvanhee/tailwindcss-debug-screens)  
+5) `npm install tailwindcss-debug-screens` (https://github.com/jorenvanhee/tailwindcss-debug-screens)  
 ✔️ Shows the current screen size while resizing the window.  
     🔹 Add to `tailwind.config.js`:
 
