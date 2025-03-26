@@ -1,4 +1,4 @@
-##tailwind-css
+## tailwind-css
 Tailwind CSS 4 Learning
 
 ## What is Tailwind CSS
@@ -66,7 +66,7 @@ export default {
 
 ## Tailwind Plugins
 1) **npm install @tailwindcss/forms**
-=> Improves the styling of form elements (`<input>`, `<select>`, `<textarea>`).
+=> Improves the styling of form elements (`<input>`, `<select>`, `<textarea>`).  
 => Add to `tailwind.config.js`:
 
 ```javascript
@@ -82,7 +82,7 @@ module.exports = {
 ```
 
 2) **npm install @tailwindcss/typography**
-=> Adds pre-styled typography classes for articles, blogs, and markdown content.
+=> Adds pre-styled typography classes for articles, blogs, and markdown content.  
 => Add to `tailwind.config.js`:
 
 ```javascript
@@ -101,7 +101,7 @@ module.exports = {
 ```
 
 3) **npm install @tailwindcss/aspect-ratio**
-=> Helps maintain fixed aspect ratios (like 16:9, 4:3) for media elements.
+=> Helps maintain fixed aspect ratios (like 16:9, 4:3) for media elements.  
 => Add to `tailwind.config.js`:
 
 ```javascript
@@ -120,7 +120,7 @@ module.exports = {
 => Keeps videos and images properly scaled!
 
 4) **npm install daisyui** (https://daisyui.com/)
-=> DaisyUI provides ready-made buttons, forms, modals, alerts, etc.
+=> DaisyUI provides ready-made buttons, forms, modals, alerts, etc.  
 => Add to ``tailwind.config.js``:
 
 ```javascript
@@ -137,7 +137,7 @@ module.exports = {
 => Saves time by providing well-designed components!
 
 5) **npm install tailwindcss-debug-screens** (https://github.com/jorenvanhee/tailwindcss-debug-screens)
-=> Shows the current screen size while resizing the window.
+=> Shows the current screen size while resizing the window.  
 => Add to `tailwind.config.js`:
 
 ```javascript
