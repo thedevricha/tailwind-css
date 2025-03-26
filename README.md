@@ -66,7 +66,7 @@ export default {
 
 ## Tailwind Plugins
 1) **npm install @tailwindcss/forms**
-=> Improves the styling of form elements (<input>, <select>, <textarea>).
+=> Improves the styling of form elements (`<input>`, `<select>`, `<textarea>`).
 => Add to `tailwind.config.js`:
 
 ```javascript
