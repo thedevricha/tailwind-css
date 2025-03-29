@@ -4,7 +4,7 @@
     "tailwindcss": "^4.0.17"
   },
   "scripts": {
-    "tailwind": "npx @tailwindcss/cli -i ./src/input.css -o ./build/css/style.css --watch",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
     "prettier": "npx prettier --write **/*.html"
   },
   "devDependencies": {
