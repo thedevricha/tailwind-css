@@ -1,4 +1,36 @@
 @import "tailwindcss";
+
+/* Custom Utility Class */
 .section-min-height {
     min-height: calc(100vh - 68px);
+}
+
+/* Extend Tailwind with Custom Media Queries */
+@layer utilities {
+    @media (min-aspect-ratio: 3/2) {
+        .wide\:section-min-height {
+            min-height: calc(100vh - 68px);
+        }
+    }
+
+    @media (min-aspect-ratio: 13/20) {
+        .tall\:section-min-height {
+            min-height: calc(100vh - 68px);
+        }
+    }
+
+    .toggle-btn{
+        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
+    }
+}
+
+/* Custom Animations */
+@keyframes open-menu {
+    0% { transform: scaleY(0); }
+    80% { transform: scaleY(1.2); }
+    100% { transform: scaleY(1); }
+}
+
+.animate-open-menu {
+    animation: open-menu 0.5s ease-in-out forwards;
 }
