@@ -49,12 +49,10 @@ Just basic understanding of HTML and CSS
 ## Tailwind Plugins
 1) `npm install @tailwindcss/forms`  
 ✔️ Improves the styling of form elements (`<input>`, `<select>`, `<textarea>`).  
-    🔹 Add to `tailwind.config.js`:
+    🔹 Add to `input.css`:
 
-    ```javascript
-    module.exports = {
-    plugins: [require("@tailwindcss/forms")],
-    };
+    ```css
+        @plugin "@tailwindcss/forms";
     ```
 
     🔹 Usage:
@@ -65,50 +63,44 @@ Just basic understanding of HTML and CSS
 
 2) `npm install @tailwindcss/typography`  
 ✔️ Adds pre-styled typography classes for articles, blogs, and markdown content.  
-   🔹 Add to `tailwind.config.js`:
+   🔹 Add to `input.css`:
 
-    ```javascript
-    module.exports = {
-    plugins: [require("@tailwindcss/typography")],
-    };
+    ```css
+        @plugin "@tailwindcss/typography";
     ```
 
    🔹 Usage:
 
     ```html
-    <article class="prose lg:prose-xl">
-    <h1>Beautifully Styled Article</h1>
-    <p>This text will be properly formatted.</p>
-    </article>
+        <article class="prose lg:prose-xl">
+        <h1>Beautifully Styled Article</h1>
+        <p>This text will be properly formatted.</p>
+        </article>
     ```
 
 3) `npm install @tailwindcss/aspect-ratio`  
 ✔️ Helps maintain fixed aspect ratios (like 16:9, 4:3) for media elements.  
-    🔹 Add to `tailwind.config.js`:
+    🔹 Add to `input.css`:
 
-    ```javascript
-    module.exports = {
-    plugins: [require("@tailwindcss/aspect-ratio")],
-    };
+    ```css
+        @plugin "@tailwindcss/aspect-ratio";
     ```
 
     🔹 Usage:
     ```html
-    <div class="aspect-w-16 aspect-h-9">
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-    </div>
+        <div class="aspect-w-16 aspect-h-9">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        </div>
     ```
 
     ✔️ Keeps videos and images properly scaled!
 
 4) `npm install daisyui` (https://daisyui.com/)  
 ✔️ DaisyUI provides ready-made buttons, forms, modals, alerts, etc.  
-    🔹 Add to ``tailwind.config.js``:
+    🔹 Add to ``input.css``:
 
-    ```javascript
-    module.exports = {
-    plugins: [require("daisyui")],
-    };
+    ```css
+        @plugin "daisyui";
     ```
 
     🔹 Usage:
@@ -120,12 +112,10 @@ Just basic understanding of HTML and CSS
 
 5) `npm install tailwindcss-debug-screens` (https://github.com/jorenvanhee/tailwindcss-debug-screens)  
 ✔️ Shows the current screen size while resizing the window.  
-    🔹 Add to `tailwind.config.js`:
+    🔹 Add to `input.css`:
 
-    ```javascript
-    module.exports = {
-    plugins: [require("tailwindcss-debug-screens")],
-    };
+    ```css
+        @plugin "tailwindcss-debug-screens";
     ```
 
     🔹 Usage:
