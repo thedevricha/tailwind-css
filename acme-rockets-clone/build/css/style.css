@@ -860,7 +860,7 @@
       min-height: calc(100vh - 68px);
     }
   }
-  @media (min-aspect-ratio: 13/20) {
+  @media (max-aspect-ratio: 13/20) {
     .tall\:section-min-height {
       min-height: calc(100vh - 68px);
     }
