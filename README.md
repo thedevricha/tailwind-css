@@ -37,32 +37,14 @@ Just basic understanding of HTML and CSS
 4) Tailwind Directives: https://tailwindcss.com/docs/functions-and-directives
 5) Tailwind CSS Full Course for Beginners | Complete All-in-One Tutorial | 3 Hours =>  https://www.youtube.com/watch?v=lCxcTsOHrjo
 6) Tailwind css tutorial Hindi => https://www.youtube.com/playlist?list=PL8p2I9GklV471sLqkGuf0eKAu9sVNmKFV
+7) Tailwind CSS 4 without Config File (`tailwind.config.js`): https://www.youtube.com/watch?v=bupetqS1SMU
+
 
 ## Commands
 1) `npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch`
 => For Compile Tailwind
 2) `npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify`
 => Reduces file size in production.
-
-## Setup for Efficiency
-### ✅ Use a Config File (tailwind.config.js)
-> Even though Tailwind 4 works without it, a config file allows customization and better performance.
-
-👉 Example `tailwind.config.js`:
-```javascript
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./src/**/*.html", // Watch only necessary files
-    "./src/**/*.js",
-  ],
-  theme: {
-    extend: {}, // Extend Tailwind as needed
-  },
-  plugins: [],
-};
-```
-✔️ Improves performance by limiting file watching.
 
 ## Tailwind Plugins
 1) `npm install @tailwindcss/forms`  
