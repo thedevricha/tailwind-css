@@ -1,5 +1,8 @@
 {
     "tailwindCSS.includeLanguages": {
         "html": "*.html"
-    }
+    },
+    "cSpell.words": [
+        "Neobrutalism"
+    ]
 }
