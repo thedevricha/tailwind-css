@@ -88,7 +88,7 @@
 				</div>
 				<!-- User Account -->
 				<button
-					class="px-1 py-1 mx-2 rounded-full border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group  dark:bg-dark-blue dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
+					class="px-1 py-1 mx-2 rounded-full border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group dark:bg-dark-blue dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
 				>
 					<svg
 						class="fill-current"
@@ -104,12 +104,14 @@
 					</svg>
 					<!-- Tooltip -->
 					<div
-						class="absolute right-0 -translate-x-1/right-0 top-full mt-2 w-max px-3 py-1.5 text-xs text-white border-2 border-dark-blue bg-dark-blue rounded opacity-0 group-hover:opacity-100 text-left dark:bg-light-blue  dark:border-light-blue"
+						class="absolute right-0 -translate-x-1/right-0 top-full mt-2 w-max px-3 py-1.5 text-xs text-white border-2 border-dark-blue bg-dark-blue rounded opacity-0 group-hover:opacity-100 text-left dark:bg-light-blue dark:border-light-blue"
 					>
 						<span class="text-sm">Google Account </span><br /><span
 							class="text-yellow dark:text-dark-blue"
 							>Richa</span
-						><br /><span class="text-yellow dark:text-dark-blue">thedevricha@gmail.com</span>
+						><br /><span class="text-yellow dark:text-dark-blue"
+							>thedevricha@gmail.com</span
+						>
 						<!-- <div
 							class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-gray-800"
 						></div> -->
@@ -119,7 +121,7 @@
 				<!-- Light/ dark mode -->
 				<div
 					onclick="changeMode()"
-					class="px-1 py-1 mx-2 rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group  dark:bg-dark-blue dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
+					class="px-1 py-1 mx-2 rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group dark:bg-dark-blue dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
 				>
 					<svg
 						class="fill-current hidden dark:inline"
@@ -149,105 +151,121 @@
 			</section>
 		</header>
 		<main class="w-full pt-10">
+			<!-- Google Logo Section -->
 			<section
-				class="text-center flex flex-row justify-center items-center -tracking-normal"
+				class="flex justify-center items-center flex-wrap md:flex-nowrap gap-1 w-full max-w-screen-xl mx-auto"
 			>
-				<h1 class="text-9xl text-dark-blue dark:text-light-blue font-google-logo dark:text-light-blue">G</h1>
-				<!-- First cloud -->
-				<div class="relative mr-2">
+				<!-- Google Text (G) -->
+				<h1
+					class="text-5xl sm:text-7xl md:text-9xl text-dark-blue dark:text-light-blue font-google-logo"
+				>
+					G
+				</h1>
+
+				<!-- First Cloud with Sun -->
+				<div
+					class="relative flex-shrink-0 scale-75 sm:scale-90 md:scale-100 mr-2"
+				>
+					<!-- Cloud Circles -->
 					<div
-						class="absolute -top-6 left-4 w-16 h-16 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
+						class="absolute -top-6 left-4 w-12 sm:w-16 h-12 sm:h-16 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
 					></div>
 					<div
-						class="absolute -top-2 left-0 w-12 h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
+						class="absolute -top-2 left-0 w-10 sm:w-12 h-10 sm:h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
 					></div>
 					<div
-						class="absolute top-0 left-12 w-14 h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
+						class="absolute top-0 left-12 w-12 sm:w-14 h-12 sm:h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
 					></div>
 
+					<!-- Main Cloud -->
 					<div
-						class="relative top-4 w-32 h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
+						class="relative top-4 w-28 sm:w-32 h-10 sm:h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
 					></div>
-					<!-- Rising sun -->
+
+					<!-- Rising Sun -->
 					<div class="absolute -top-10 left-10 -z-10">
 						<div
-							class="w-24 h-24 bg-yellow rounded-full shadow-lg relative z-10"
+							class="w-20 sm:w-24 h-20 sm:h-24 bg-yellow rounded-full shadow-lg relative z-10"
 						></div>
 						<div
-							class="absolute top-0 left-1/2 h-8 w-2 bg-yellow -translate-x-1/2 -translate-y-9"
+							class="absolute top-0 left-1/2 h-6 sm:h-8 w-1.5 sm:w-2 bg-yellow -translate-x-1/2 -translate-y-9"
 						></div>
-
 						<div
-							class="absolute top-0 left-1/5 h-8 w-2 bg-yellow -translate-x-1/5 -translate-y-8 transform -rotate-20"
+							class="absolute top-0 left-[20%] h-6 sm:h-8 w-1.5 sm:w-2 bg-yellow -translate-x-[20%] -translate-y-8 transform -rotate-20"
 						></div>
-
 						<div
-							class="absolute top-0 right-1/6 h-8 w-2 bg-yellow -translate-x-1/6 -translate-y-8 transform rotate-20"
+							class="absolute top-0 right-[16%] h-6 sm:h-8 w-1.5 sm:w-2 bg-yellow -translate-x-[16%] -translate-y-8 transform rotate-20"
 						></div>
-
 						<div
-							class="absolute top-0 -right-1/12 h-8 w-2 bg-yellow -translate-x-1/12 -translate-y-4 transform rotate-50"
+							class="absolute top-0 -right-[8%] h-6 sm:h-8 w-1.5 sm:w-2 bg-yellow -translate-x-[8%] -translate-y-4 transform rotate-50"
 						></div>
-
 						<div
-							class="absolute top-0 -right-10 h-8 w-2 bg-yellow -translate-x-4 translate-y-2 transform rotate-[70deg]"
+							class="absolute top-0 -right-10 h-6 sm:h-8 w-1.5 sm:w-2 bg-yellow -translate-x-4 translate-y-2 transform rotate-[70deg]"
 						></div>
 					</div>
 				</div>
 
-				<!-- Second cloud -->
-				<div class="relative">
+				<!-- Second Cloud with Raindrops -->
+				<div class="relative flex-shrink-0 scale-75 sm:scale-90 md:scale-100">
 					<div
-						class="absolute -top-4 left-6 w-14 h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
+						class="absolute -top-4 left-6 w-12 sm:w-14 h-12 sm:h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
 					></div>
 					<div
-						class="absolute -top-2 left-2 w-14 h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
+						class="absolute -top-2 left-2 w-12 sm:w-14 h-12 sm:h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
 					></div>
 					<div
-						class="absolute top-0 left-16 w-10 h-10 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
+						class="absolute top-0 left-16 w-8 sm:w-10 h-8 sm:h-10 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
 					></div>
 					<div
-						class="relative top-4 w-28 h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
+						class="relative top-4 w-24 sm:w-28 h-10 sm:h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
 					></div>
+
 					<!-- Rain drops -->
-					<!-- first drop -->
 					<div
-						class="absolute top-18 left-6 w-2 h-6 bg-blue-400 rounded-b-full rounded-t-md"
+						class="absolute top-[72px] left-6 w-1.5 h-6 bg-blue-400 rounded-b-full rounded-t-md"
 					></div>
-					<!-- Second drop -->
 					<div
-						class="absolute top-20 left-11 w-2 h-5 bg-blue-400 rounded-b-full rounded-t-md"
+						class="absolute top-[80px] left-11 w-1.5 h-5 bg-blue-400 rounded-b-full rounded-t-md"
 					></div>
-					<!-- Third drop -->
 					<div
-						class="absolute top-17 left-15.5 w-2 h-9 bg-blue-400 rounded-b-full rounded-t-md"
+						class="absolute top-[68px] left-[62px] w-1.5 h-9 bg-blue-400 rounded-b-full rounded-t-md"
 					></div>
-					<!-- Fourth drop -->
 					<div
-						class="absolute top-18 left-20 w-2 h-4 bg-blue-400 rounded-b-full rounded-t-md"
+						class="absolute top-[72px] left-[80px] w-1.5 h-4 bg-blue-400 rounded-b-full rounded-t-md"
 					></div>
 				</div>
-				<h1 class="text-9xl text-dark-blue dark:text-light-blue font-google-logo">gle</h1>
+
+				<!-- Google Text (gle) -->
+				<h1
+					class="text-5xl sm:text-7xl md:text-9xl text-dark-blue dark:text-light-blue font-google-logo"
+				>
+					gle
+				</h1>
 			</section>
+
 			<!-- Search section -->
-			<section class="w-full">
-				<div class="flex justify-center pt-5 pb-10">
-					<div class="relative">
+			<section class="w-full px-4 md:px-6 sm:pt-6">
+				<div
+					class="flex justify-center pt-3 sm:pt-4 md:pt-5 pb-6 sm:pb-8 md:pb-10"
+				>
+					<div
+						class="relative w-full max-w-xs sm:max-w-md md:max-w-xl lg:max-w-2xl"
+					>
 						<!-- Search input -->
 						<input
 							type="text"
 							id="search-btn"
-							class="w-2xl max-w-3xl h-12 min-h-11 pl-12 rounded-full border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] transform duration-700 text-dark-blue cursor-default hover:shadow-none hover:translate-0.5 focus:outline-0 active:outline-0 active:shadow-none dark:border-light-blue dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
+							class="w-full h-10 sm:h-11 md:h-12 min-h-10 pl-10 sm:pl-12 pr-20 rounded-full border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] transform duration-700 text-dark-blue text-sm sm:text-base cursor-default hover:shadow-none hover:translate-0.5 focus:outline-0 active:outline-0 active:shadow-none dark:border-light-blue dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
 							readonly
 						/>
-
 						<!-- Search Icon -->
-						<div class="absolute top-3 left-4">
+						<div class="absolute top-1/2 -translate-y-1/2 left-3 sm:left-4">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
-								height="25px"
+								height="20px"
 								viewBox="0 -960 960 960"
-								width="25px"
+								width="20px"
+								class="w-5 h-5 sm:w-6 sm:h-6"
 								fill="#004643"
 							>
 								<path
@@ -256,36 +274,37 @@
 							</svg>
 						</div>
 						<!-- Search by voice  -->
-						<div class="absolute right-12 top-3 cursor-pointer group">
+						<div
+							class="absolute right-10 sm:right-12 top-1/2 -translate-y-1/2 cursor-pointer group"
+						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
-								height="25px"
+								class="w-5 h-5 sm:w-6 sm:h-6"
 								viewBox="0 -960 960 960"
-								width="25px"
 								fill="#004643"
 							>
 								<path
 									d="M480-384q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm0-240Zm-36 480v-99q-98.8-13.1-163.4-87.05Q216-404 216-504h72q0 79.68 56.23 135.84 56.22 56.16 136 56.16Q560-312 616-368.16q56-56.16 56-135.84h72q0 100-64.6 173.95Q614.8-256.1 516-243v99h-72Zm36-312q20.4 0 34.2-13.8Q528-483.6 528-504v-240q0-20.4-13.8-34.2Q500.4-792 480-792q-20.4 0-34.2 13.8Q432-764.4 432-744v240q0 20.4 13.8 34.2Q459.6-456 480-456Z"
 								/>
 							</svg>
-
 							<!-- Tooltip -->
 							<div
-								class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1.5 text-xs text-white bg-dark-blue shadow-lg opacity-0 group-hover:opacity-100 transition-opacity rounded pointer-events-none z-10 dark:bg-light-blue "
+								class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-2 sm:px-3 py-1 sm:py-1.5 text-xs text-white bg-dark-blue shadow-lg opacity-0 group-hover:opacity-100 transition-opacity rounded pointer-events-none z-10 dark:bg-light-blue"
 							>
 								Search by voice
 								<div
-									class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-dark-blue dark:border-b-light-blue"
+									class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-4 sm:border-x-5 border-x-transparent border-b-4 sm:border-b-5 border-b-dark-blue dark:border-b-light-blue"
 								></div>
 							</div>
 						</div>
 						<!-- Search by image -->
-						<div class="absolute right-4 top-3 cursor-pointer group">
+						<div
+							class="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 cursor-pointer group"
+						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
-								height="25px"
+								class="w-5 h-5 sm:w-6 sm:h-6"
 								viewBox="0 -960 960 960"
-								width="25px"
 								fill="#004643"
 							>
 								<path
@@ -294,11 +313,11 @@
 							</svg>
 							<!-- Tooltip -->
 							<div
-								class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1.5 text-xs text-white bg-dark-blue shadow-lg opacity-0 group-hover:opacity-100 transition-opacity rounded pointer-events-none z-10 dark:bg-light-blue"
+								class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-2 sm:px-3 py-1 sm:py-1.5 text-xs text-white bg-dark-blue shadow-lg opacity-0 group-hover:opacity-100 transition-opacity rounded pointer-events-none z-10 dark:bg-light-blue"
 							>
 								Search by image
 								<div
-									class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-dark-blue dark:border-b-light-blue"
+									class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-4 sm:border-x-5 border-x-transparent border-b-4 sm:border-b-5 border-b-dark-blue dark:border-b-light-blue"
 								></div>
 							</div>
 						</div>
@@ -322,72 +341,74 @@
 			</section>
 			<!-- Language section -->
 			<section class="w-full">
-				<ul class="flex flex-1 items-center justify-center flex-row">
-					<li class="text-[14px] font-light pr-4">Google offered in:</li>
-					<li class="text-[14px] font-normal pr-4">
-						<a
-							href="#"
-							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-							>हिन्दी</a
-						>
-					</li>
-					<li class="text-[14px] font-normal pr-4">
-						<a
-							href="#"
-							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-							>বাংলা</a
-						>
-					</li>
-					<li class="text-[14px] font-normal pr-4">
-						<a
-							href="#"
-							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-							>తెలుగు</a
-						>
-					</li>
-					<li class="text-[14px] font-normal pr-4">
-						<a
-							href="#"
-							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-							>मराठी</a
-						>
-					</li>
-					<li class="text-[14px] font-normal pr-4">
-						<a
-							href="#"
-							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-							>தமிழ்</a
-						>
-					</li>
-					<li class="text-[14px] font-normal pr-4">
-						<a
-							href="#"
-							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-							>ગુજરાતી</a
-						>
-					</li>
-					<li class="text-[14px] font-normal pr-4">
-						<a
-							href="#"
-							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-							>ಕನ್ನಡ</a
-						>
-					</li>
-					<li class="text-[14px] font-normal pr-4">
-						<a
-							href="#"
-							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-							>മലയാളം</a
-						>
-					</li>
-					<li class="text-[14px] font-normal pr-4">
-						<a
-							href="#"
-							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-							>ਪੰਜਾਬੀ</a
-						>
-					</li>
-				</ul>
+				<div class="flex md:flex-row sm:flex-col md:gap-x-3 justify-center">
+					<p class="text-[14px] font-light sm:text-center md:text-right">Google offered in:</p>
+					<ul class="flex flex-row justify-center">
+						<li class="text-[14px] font-normal pr-4">
+							<a
+								href="#"
+								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
+								>हिन्दी</a
+							>
+						</li>
+						<li class="text-[14px] font-normal pr-4">
+							<a
+								href="#"
+								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
+								>বাংলা</a
+							>
+						</li>
+						<li class="text-[14px] font-normal pr-4">
+							<a
+								href="#"
+								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
+								>తెలుగు</a
+							>
+						</li>
+						<li class="text-[14px] font-normal pr-4">
+							<a
+								href="#"
+								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
+								>मराठी</a
+							>
+						</li>
+						<li class="text-[14px] font-normal pr-4">
+							<a
+								href="#"
+								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
+								>தமிழ்</a
+							>
+						</li>
+						<li class="text-[14px] font-normal pr-4">
+							<a
+								href="#"
+								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
+								>ગુજરાતી</a
+							>
+						</li>
+						<li class="text-[14px] font-normal pr-4">
+							<a
+								href="#"
+								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
+								>ಕನ್ನಡ</a
+							>
+						</li>
+						<li class="text-[14px] font-normal pr-4">
+							<a
+								href="#"
+								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
+								>മലയാളം</a
+							>
+						</li>
+						<li class="text-[14px] font-normal pr-4">
+							<a
+								href="#"
+								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
+								>ਪੰਜਾਬੀ</a
+							>
+						</li>
+					</ul>
+				</div>
 			</section>
 		</main>
 		<footer class="bg-white dark:bg-footer-dark mt-auto w-full">
@@ -436,21 +457,22 @@
 		<!-- Search model -->
 		<div
 			id="search-modal"
-			class="fixed w-screen h-screen items-center justify-center hidden before:w-screen before:h-screen before:bg-light-blue before:opacity-70 z-50"
+			class="fixed w-screen h-screen items-center justify-center hidden before:w-screen before:h-screen before:bg-light-blue before:opacity-70 z-50 max-w-screen-xl mx-auto md:flex-nowrap"
 		>
 			<div
-				class="w-3xl absolute rounded-2xl border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] z-100 dark:border-white dark:bg-dark-blue dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
+				class="w-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] z-100 dark:border-white dark:bg-dark-blue dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)] md:w-3/4 lg:w-2/3 w-[90%] max-w-md mx-auto"
 			>
 				<input
 					type="text"
 					name="search"
 					id="search"
 					autocomplete="off"
-					class="w-full h-12 min-h-11 pl-12 text-dark-blue border-dark-blue border-b-2 focus:outline-0 active:outline-0 dark:border-white dark:text-white"
+					class="w-full h-12 min-h-11 pl-12 text-dark-blue border-dark-blue border-b-2 focus:outline-0 active:outline-0 dark:border-white dark:text-white text-sm md:text-base rounded-t-2xl"
 				/>
 				<!-- Search Icon -->
 				<div class="absolute top-3 left-4">
-					<svg class="fill-current"
+					<svg
+						class="fill-current"
 						xmlns="http://www.w3.org/2000/svg"
 						height="25px"
 						viewBox="0 -960 960 960"
@@ -467,7 +489,8 @@
 					id="close-btn"
 					class="absolute right-4 top-3 cursor-pointer hover:border-2 rounded-3xl dark:text-white"
 				>
-					<svg class="fill-current"
+					<svg
+						class="fill-current"
 						xmlns="http://www.w3.org/2000/svg"
 						height="24px"
 						viewBox="0 -960 960 960"
@@ -483,26 +506,29 @@
 				<div class="px-3 py-5">
 					<ul>
 						<li class="">
-							<p class="px-2 text-light-blue text-base">Trending searches</p>
-						</li>
+							<p class="px-2 text-light-blue text-sm md:text-base">
+								Trending searches
+							</p>
+						</p>
 
 						<li
 							class="text-lg hover:border-dark-blue dark:hover:border-white dark:text-white hover:border-2 hover:rounded-full"
 						>
 							<div class="px-2 py-1.5 flex items-center cursor-pointer">
-								<!-- Trending icon --> 
-								<svg class="fill-current"
+								<!-- Trending icon -->
+								<svg
+									class="fill-current w-4 h-4 md:w-5 md:h-5"
 									xmlns="http://www.w3.org/2000/svg"
-									height="20px"
 									viewBox="0 -960 960 960"
-									width="20px"
 									fill="#004643"
 								>
 									<path
 										d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
 									/>
 								</svg>
-								<p class="text-[16px] pl-3">Latest AI technologies in 2025</p>
+								<p class="text-xs md:text-sm lg:text-base pl-3">
+									Latest AI technologies in 2025
+								</p>
 							</div>
 						</li>
 
@@ -510,18 +536,17 @@
 							class="text-lg hover:border-dark-blue dark:hover:border-white dark:text-white hover:border-2 hover:rounded-full"
 						>
 							<div class="px-2 py-1.5 flex items-center cursor-pointer">
-								<svg class="fill-current"
+								<svg
+									class="fill-current w-4 h-4 md:w-5 md:h-5"
 									xmlns="http://www.w3.org/2000/svg"
-									height="20px"
 									viewBox="0 -960 960 960"
-									width="20px"
 									fill="#004643"
 								>
 									<path
 										d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
 									/>
 								</svg>
-								<p class="text-[16px] pl-3">
+								<p class="text-xs md:text-sm lg:text-base pl-3">
 									How to use Tailwind CSS effectively
 								</p>
 							</div>
@@ -531,18 +556,19 @@
 							class="text-lg hover:border-dark-blue dark:hover:border-white dark:text-white hover:border-2 hover:rounded-full"
 						>
 							<div class="px-2 py-1.5 flex items-center cursor-pointer">
-								<svg class="fill-current"
+								<svg
+									class="fill-current w-4 h-4 md:w-5 md:h-5"
 									xmlns="http://www.w3.org/2000/svg"
-									height="20px"
 									viewBox="0 -960 960 960"
-									width="20px"
 									fill="#004643"
 								>
 									<path
 										d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
 									/>
 								</svg>
-								<p class="text-[16px] pl-3">Web development roadmap 2025</p>
+								<p class="text-xs md:text-sm lg:text-base pl-3">
+									Web development roadmap 2025
+								</p>
 							</div>
 						</li>
 
@@ -550,30 +576,33 @@
 							class="text-lg hover:border-dark-blue dark:hover:border-white dark:text-white hover:border-2 hover:rounded-full"
 						>
 							<div class="px-2 py-1.5 flex items-center cursor-pointer">
-								<svg class="fill-current"
+								<svg
+									class="fill-current w-4 h-4 md:w-5 md:h-5"
 									xmlns="http://www.w3.org/2000/svg"
-									height="20px"
 									viewBox="0 -960 960 960"
-									width="20px"
 									fill="#004643"
 								>
 									<path
 										d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
 									/>
 								</svg>
-								<p class="text-[16px] pl-3">Google I/O conference updates</p>
+								<p class="text-xs md:text-sm lg:text-base pl-3">
+									Google I/O conference updates
+								</p>
 							</div>
 						</li>
 					</ul>
 					<!-- Two buttons -->
-					<div class="flex justify-center pt-8 pb-2 gap-x-6">
+					<div
+						class="flex flex-col sm:flex-row justify-center items-center pt-8 pb-2 gap-y-4 sm:gap-y-0 sm:gap-x-4 lg:gap-x-6"
+					>
 						<button
-							class="px-8 py-3 text-[14px] rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 dark:border-white dark:bg-dark-blue dark:dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
+							class="w-full sm:w-auto px-4 lg:px-8 py-2 sm:py-3 text-xs md:text-sm rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 dark:border-white dark:bg-dark-blue dark:dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
 						>
 							Google Search
 						</button>
 						<button
-							class="px-8 py-3 text-[14px] rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 dark:border-white dark:bg-dark-blue dark:dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
+							class="w-full sm:w-auto px-4 lg:px-8 py-2 sm:py-3 text-xs md:text-sm rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 dark:border-white dark:bg-dark-blue dark:dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
 						>
 							I'm Feeling Lucky
 						</button>
