@@ -1,25 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Google UI - Neobrutalism Theme</title>
 		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/main.js"></script>
 	</head>
-	<body class="font-public-sans bg-light-blue text-dark-blue font-roboto flex flex-col min-h-screen">
+	<body
+		class="font-public-sans bg-light-blue text-dark-blue font-roboto flex flex-col min-h-full"
+	>
 		<header class="flex justify-between items-center py-5 px-5">
 			<section class="flex justify-between items-center">
-				<a href="#" class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2">About</a>
-				<a href="#" class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2">Store</a>
+				<a
+					href="#"
+					class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
+					>About</a
+				>
+				<a
+					href="#"
+					class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
+					>Store</a
+				>
 			</section>
 			<section class="flex justify-between items-center">
-				<a href="#" class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2">Gmail</a>
-				<a href="#" class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2">Images</a>
-				<div class="px-1 py-1 mx-2 rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:duration-300 hover:translate-0.5">
-					<svg class="fill-current" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#444746"><path d="M200-120q-51 0-72.5-45.5T138-250l222-270v-240h-40q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760h-40v240l222 270q32 39 10.5 84.5T760-120H200Zm80-120h400L544-400H416L280-240Zm-80 40h560L520-492v-268h-80v268L200-200Zm280-280Z"/></svg>
+				<a
+					href="#"
+					class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
+					>Gmail</a
+				>
+				<a
+					href="#"
+					class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
+					>Images</a
+				>
+				<div
+					class="px-1 py-1 mx-2 rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group"
+				>
+					<svg
+						class="fill-current"
+						xmlns="http://www.w3.org/2000/svg"
+						height="24px"
+						viewBox="0 -960 960 960"
+						width="24px"
+						fill="#444746"
+					>
+						<path
+							d="M200-120q-51 0-72.5-45.5T138-250l222-270v-240h-40q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760h-40v240l222 270q32 39 10.5 84.5T760-120H200Zm80-120h400L544-400H416L280-240Zm-80 40h560L520-492v-268h-80v268L200-200Zm280-280Z"
+						/>
+					</svg>
+					<!-- Tooltip -->
+					<div
+						class="absolute left-1/2 -translate-x-1/2 top-full mt-1 w-max px-3 py-1.5 text-xs text-white border-2 border-dark-blue bg-dark-blue rounded opacity-0 group-hover:opacity-100"
+					>
+						Search Labs
+						<div
+							class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-dark-blue"
+						></div>
+					</div>
 				</div>
-				<div class="px-1 py-1 mx-2 rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:duration-300 hover:translate-0.5">
-					<svg class="fill-current" 
+				<div
+					class="px-1 py-1 mx-2 rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group"
+				>
+					<svg
+						class="fill-current"
 						xmlns="http://www.w3.org/2000/svg"
 						height="24px"
 						viewBox="0 -960 960 960"
@@ -30,76 +74,478 @@
 							d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"
 						/>
 					</svg>
+					<!-- Tooltip -->
+					<div
+						class="absolute left-1/2 -translate-x-1/2 top-full mt-1 w-max px-3 py-1.5 text-xs text-white border-2 border-dark-blue bg-dark-blue rounded opacity-0 group-hover:opacity-100"
+					>
+						Google apps
+						<div
+							class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-gray-800"
+						></div>
+					</div>
 				</div>
-				<button class="px-1 py-1 mx-2 rounded-full border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:duration-300 hover:translate-0.5"><svg class="fill-current" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#444746"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></button>
+				<button
+					class="px-1 py-1 mx-2 rounded-full border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group"
+				>
+					<svg
+						class="fill-current"
+						xmlns="http://www.w3.org/2000/svg"
+						height="24px"
+						viewBox="0 -960 960 960"
+						width="24px"
+						fill="#444746"
+					>
+						<path
+							d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"
+						/>
+					</svg>
+					<!-- Tooltip -->
+					<div
+						class="absolute right-0 -translate-x-1/right-0 top-full mt-2 w-max px-3 py-1.5 text-xs text-white border-2 border-dark-blue bg-dark-blue rounded opacity-0 group-hover:opacity-100 text-left"
+					>
+						<span class="text-sm">Google Account </span><br /><span
+							class="text-yellow"
+							>Richa</span
+						><br /><span class="text-yellow">thedevricha@gmail.com</span>
+						<!-- <div
+							class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-gray-800"
+						></div> -->
+					</div>
+				</button>
 			</section>
 		</header>
 		<main class="w-full pt-10">
-			<section class="w-full text-center">
-				<h1 class="text-6xl">Google</h1>
+			<section
+				class="text-center flex flex-row justify-center items-center -tracking-normal"
+			>
+				<h1 class="text-9xl text-dark-blue font-google-logo">G</h1>
+				<!-- First cloud -->
+				<div class="relative mr-2">
+					<div
+						class="absolute -top-6 left-4 w-16 h-16 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)]"
+					></div>
+					<div
+						class="absolute -top-2 left-0 w-12 h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)]"
+					></div>
+					<div
+						class="absolute top-0 left-12 w-14 h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)]"
+					></div>
+
+					<div
+						class="relative top-4 w-32 h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)]"
+					></div>
+					<!-- Rising sun -->
+					<div class="absolute -top-10 left-10 -z-10">
+						<div
+							class="w-24 h-24 bg-yellow-400 rounded-full shadow-lg relative z-10"
+						></div>
+						<div
+							class="absolute top-0 left-1/2 h-8 w-2 bg-yellow-300 -translate-x-1/2 -translate-y-9"
+						></div>
+
+						<div
+							class="absolute top-0 left-1/5 h-8 w-2 bg-yellow-300 -translate-x-1/5 -translate-y-8 transform -rotate-20"
+						></div>
+
+						<div
+							class="absolute top-0 right-1/6 h-8 w-2 bg-yellow-300 -translate-x-1/6 -translate-y-8 transform rotate-20"
+						></div>
+
+						<div
+							class="absolute top-0 -right-1/12 h-8 w-2 bg-yellow-300 -translate-x-1/12 -translate-y-4 transform rotate-50"
+						></div>
+
+						<div
+							class="absolute top-0 -right-10 h-8 w-2 bg-yellow-300 -translate-x-4 translate-y-2 transform rotate-[70deg]"
+						></div>
+					</div>
+				</div>
+
+				<!-- Second cloud -->
+				<div class="relative">
+					<div
+						class="absolute -top-4 left-6 w-14 h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)]"
+					></div>
+					<div
+						class="absolute -top-2 left-2 w-14 h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)]"
+					></div>
+					<div
+						class="absolute top-0 left-16 w-10 h-10 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)]"
+					></div>
+					<div
+						class="relative top-4 w-28 h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)]"
+					></div>
+					<!-- Rain drops -->
+					<!-- first drop -->
+					<div
+						class="absolute top-18 left-6 w-2 h-6 bg-blue-400 rounded-b-full rounded-t-md"
+					></div>
+					<!-- Second drop -->
+					<div
+						class="absolute top-20 left-11 w-2 h-5 bg-blue-400 rounded-b-full rounded-t-md"
+					></div>
+					<!-- Third drop -->
+					<div
+						class="absolute top-17 left-15.5 w-2 h-9 bg-blue-400 rounded-b-full rounded-t-md"
+					></div>
+					<!-- Fourth drop -->
+					<div
+						class="absolute top-18 left-20 w-2 h-4 bg-blue-400 rounded-b-full rounded-t-md"
+					></div>
+				</div>
+				<h1 class="text-9xl text-dark-blue font-google-logo">gle</h1>
 			</section>
 			<!-- Search section -->
 			<section class="w-full">
-				<div class="flex justify-center py-10">
+				<div class="flex justify-center pt-5 pb-10">
 					<div class="relative">
 						<!-- Search input -->
-						<input type="text" class="w-2xl max-w-3xl rounded-full border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 text-dark-blue hover:shadow-none hover:duration-300 hover:translate-0.5 h-11 min-h-11 pl-12 active:outline-0 active:shadow-none">
+						<input
+							type="text"
+							id="search-btn"
+							class="w-2xl max-w-3xl h-12 min-h-11 pl-12 rounded-full border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] transform duration-700 text-dark-blue cursor-default hover:shadow-none hover:translate-0.5 focus:outline-0 active:outline-0 active:shadow-none"
+							readonly
+						/>
+
 						<!-- Search Icon -->
-						<div class="absolute top-2.5 left-4">
-							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#9aa0a6"><path d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"/></svg>
+						<div class="absolute top-3 left-4">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="25px"
+								viewBox="0 -960 960 960"
+								width="25px"
+								fill="#004643"
+							>
+								<path
+									d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"
+								/>
+							</svg>
 						</div>
 						<!-- Search by voice  -->
-						<div class="absolute right-12 top-2.5">
-							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#9aa0a6"><path d="M480-384q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm0-240Zm-36 480v-99q-98.8-13.1-163.4-87.05Q216-404 216-504h72q0 79.68 56.23 135.84 56.22 56.16 136 56.16Q560-312 616-368.16q56-56.16 56-135.84h72q0 100-64.6 173.95Q614.8-256.1 516-243v99h-72Zm36-312q20.4 0 34.2-13.8Q528-483.6 528-504v-240q0-20.4-13.8-34.2Q500.4-792 480-792q-20.4 0-34.2 13.8Q432-764.4 432-744v240q0 20.4 13.8 34.2Q459.6-456 480-456Z"/></svg>
+						<div class="absolute right-12 top-3 cursor-pointer group">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="25px"
+								viewBox="0 -960 960 960"
+								width="25px"
+								fill="#004643"
+							>
+								<path
+									d="M480-384q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm0-240Zm-36 480v-99q-98.8-13.1-163.4-87.05Q216-404 216-504h72q0 79.68 56.23 135.84 56.22 56.16 136 56.16Q560-312 616-368.16q56-56.16 56-135.84h72q0 100-64.6 173.95Q614.8-256.1 516-243v99h-72Zm36-312q20.4 0 34.2-13.8Q528-483.6 528-504v-240q0-20.4-13.8-34.2Q500.4-792 480-792q-20.4 0-34.2 13.8Q432-764.4 432-744v240q0 20.4 13.8 34.2Q459.6-456 480-456Z"
+								/>
+							</svg>
+
+							<!-- Tooltip -->
+							<div
+								class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1.5 text-xs text-white bg-dark-blue shadow-lg opacity-0 group-hover:opacity-100 transition-opacity rounded pointer-events-none z-10"
+							>
+								Search by voice
+								<div
+									class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-dark-blue"
+								></div>
+							</div>
 						</div>
 						<!-- Search by image -->
-						<div class="absolute right-4 top-2.5">
-							<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#9aa0a6"><path d="M216-144q-29.7 0-50.85-21.5Q144-187 144-216v-528q0-29 21.15-50.5T216-816h528q29.7 0 50.85 21.5Q816-773 816-744v528q0 29-21.15 50.5T744-144H216Zm0-72h528v-528H216v528Zm48-72h432L552-480 444-336l-72-96-108 144Zm-48 72v-528 528Z"/></svg>
+						<div class="absolute right-4 top-3 cursor-pointer group">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="25px"
+								viewBox="0 -960 960 960"
+								width="25px"
+								fill="#004643"
+							>
+								<path
+									d="M216-144q-29.7 0-50.85-21.5Q144-187 144-216v-528q0-29 21.15-50.5T216-816h528q29.7 0 50.85 21.5Q816-773 816-744v528q0 29-21.15 50.5T744-144H216Zm0-72h528v-528H216v528Zm48-72h432L552-480 444-336l-72-96-108 144Zm-48 72v-528 528Z"
+								/>
+							</svg>
+							<!-- Tooltip -->
+							<div
+								class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1.5 text-xs text-white bg-dark-blue shadow-lg opacity-0 group-hover:opacity-100 transition-opacity rounded pointer-events-none z-10"
+							>
+								Search by image
+								<div
+									class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-dark-blue"
+								></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 			<!-- Buttons section -->
 			<section class="w-full">
-				<div class="flex justify-center pb-8">
-					<button class="px-8 py-3 border-2 text-[14px] mr-2">Google Search</button>
-					<button class="px-8 py-3 border-2 text-[14px]">I'm Feeling Lucky</button>
+				<div class="flex justify-center pb-9 gap-x-6">
+					<button
+						class="px-8 py-3 text-[14px] rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5"
+					>
+						Google Search
+					</button>
+					<button
+						class="px-8 py-3 text-[14px] rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5"
+					>
+						I'm Feeling Lucky
+					</button>
 				</div>
 			</section>
 			<!-- Language section -->
 			<section class="w-full">
 				<ul class="flex flex-1 items-center justify-center flex-row">
 					<li class="text-[14px] font-light pr-4">Google offered in:</li>
-					<li class="text-[14px] font-normal pr-4"><a href="#" class="text-dark-blue">हिन्दी</a></li>
-					<li class="text-[14px] font-normal pr-4"><a href="#" class="text-dark-blue">বাংলা</a></li>
-					<li class="text-[14px] font-normal pr-4"><a href="#" class="text-dark-blue">తెలుగు</a></li>
-					<li class="text-[14px] font-normal pr-4"><a href="#" class="text-dark-blue">मराठी</a></li>
-					<li class="text-[14px] font-normal pr-4"><a href="#" class="text-dark-blue">தமிழ்</a></li>
-					<li class="text-[14px] font-normal pr-4"><a href="#" class="text-dark-blue">ગુજરાતી</a></li>
-					<li class="text-[14px] font-normal pr-4"><a href="#" class="text-dark-blue">ಕನ್ನಡ</a></li>
-					<li class="text-[14px] font-normal pr-4"><a href="#" class="text-dark-blue">മലയാളം</a></li>
-					<li class="text-[14px] font-normal pr-4"><a href="#" class="text-dark-blue">ਪੰਜਾਬੀ</a></li>
+					<li class="text-[14px] font-normal pr-4">
+						<a
+							href="#"
+							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							>हिन्दी</a
+						>
+					</li>
+					<li class="text-[14px] font-normal pr-4">
+						<a
+							href="#"
+							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							>বাংলা</a
+						>
+					</li>
+					<li class="text-[14px] font-normal pr-4">
+						<a
+							href="#"
+							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							>తెలుగు</a
+						>
+					</li>
+					<li class="text-[14px] font-normal pr-4">
+						<a
+							href="#"
+							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							>मराठी</a
+						>
+					</li>
+					<li class="text-[14px] font-normal pr-4">
+						<a
+							href="#"
+							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							>தமிழ்</a
+						>
+					</li>
+					<li class="text-[14px] font-normal pr-4">
+						<a
+							href="#"
+							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							>ગુજરાતી</a
+						>
+					</li>
+					<li class="text-[14px] font-normal pr-4">
+						<a
+							href="#"
+							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							>ಕನ್ನಡ</a
+						>
+					</li>
+					<li class="text-[14px] font-normal pr-4">
+						<a
+							href="#"
+							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							>മലയാളം</a
+						>
+					</li>
+					<li class="text-[14px] font-normal pr-4">
+						<a
+							href="#"
+							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							>ਪੰਜਾਬੀ</a
+						>
+					</li>
 				</ul>
 			</section>
 		</main>
-		<footer class="bg-white absolute bottom-0 w-full">
+		<footer class="bg-white mt-auto w-full">
 			<!-- Top section -->
-			<section class="border-b-2 border-dark-blue py-5 px-5 ">
+			<section class="border-b-2 border-b-dark-blue py-5 px-5">
 				<p class="px-2">India</p>
 			</section>
 			<!-- Bottom section -->
 			<section class="flex justify-between items-center py-5 px-5">
 				<section class="flex justify-between items-center">
-					<a href="#" class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2">Advertising</a>
-					<a href="#" class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2">Business</a>
-					<a href="#" class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2">How Search works</a>
+					<a
+						href="#"
+						class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
+						>Advertising</a
+					>
+					<a
+						href="#"
+						class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
+						>Business</a
+					>
+					<a
+						href="#"
+						class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
+						>How Search works</a
+					>
 				</section>
 				<section class="flex justify-between items-center">
-					<a href="#" class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2">Privacy</a>
-					<a href="#" class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2">Terms</a>
-					<a href="#" class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2">Settings</a>
+					<a
+						href="#"
+						class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
+						>Privacy</a
+					>
+					<a
+						href="#"
+						class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
+						>Terms</a
+					>
+					<a
+						href="#"
+						class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
+						>Settings</a
+					>
 				</section>
 			</section>
 		</footer>
+		<!-- Search model -->
+		<div
+			id="search-modal"
+			class="fixed w-screen h-screen items-center justify-center hidden before:w-screen before:h-screen before:bg-light-blue before:opacity-70 z-50"
+		>
+			<div
+				class="w-3xl absolute rounded-2xl border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] z-100"
+			>
+				<input
+					type="text"
+					name="search"
+					id="search"
+					autocomplete="off"
+					class="w-full h-12 min-h-11 pl-12 border-dark-blue border-b-2 focus:outline-0 active:outline-0"
+				/>
+				<!-- Search Icon -->
+				<div class="absolute top-3 left-4">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="25px"
+						viewBox="0 -960 960 960"
+						width="25px"
+						fill="#004643"
+					>
+						<path
+							d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"
+						/>
+					</svg>
+				</div>
+				<!-- Close icon  -->
+				<div
+					id="close-btn"
+					class="absolute right-4 top-3 cursor-pointer hover:border-2 rounded-3xl"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="24px"
+						viewBox="0 -960 960 960"
+						width="24px"
+						fill="#004643"
+					>
+						<path
+							d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+						/>
+					</svg>
+				</div>
+				<!-- Suggestion list -->
+				<div class="px-3 py-5">
+					<ul>
+						<li class="">
+							<p class="px-2 text-light-blue text-base">Trending searches</p>
+						</li>
+
+						<li
+							class="text-lg hover:border-dark-blue hover:border-2 hover:rounded-full"
+						>
+							<div class="px-2 py-1.5 flex items-center cursor-pointer">
+								<!-- Trending icon -->
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									height="20px"
+									viewBox="0 -960 960 960"
+									width="20px"
+									fill="#004643"
+								>
+									<path
+										d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
+									/>
+								</svg>
+								<p class="text-[16px] pl-3">Latest AI technologies in 2025</p>
+							</div>
+						</li>
+
+						<li
+							class="text-lg hover:border-dark-blue hover:border-2 hover:rounded-full"
+						>
+							<div class="px-2 py-1.5 flex items-center cursor-pointer">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									height="20px"
+									viewBox="0 -960 960 960"
+									width="20px"
+									fill="#004643"
+								>
+									<path
+										d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
+									/>
+								</svg>
+								<p class="text-[16px] pl-3">
+									How to use Tailwind CSS effectively
+								</p>
+							</div>
+						</li>
+
+						<li
+							class="text-lg hover:border-dark-blue hover:border-2 hover:rounded-full"
+						>
+							<div class="px-2 py-1.5 flex items-center cursor-pointer">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									height="20px"
+									viewBox="0 -960 960 960"
+									width="20px"
+									fill="#004643"
+								>
+									<path
+										d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
+									/>
+								</svg>
+								<p class="text-[16px] pl-3">Web development roadmap 2025</p>
+							</div>
+						</li>
+
+						<li
+							class="text-lg hover:border-dark-blue hover:border-2 hover:rounded-full"
+						>
+							<div class="px-2 py-1.5 flex items-center cursor-pointer">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									height="20px"
+									viewBox="0 -960 960 960"
+									width="20px"
+									fill="#004643"
+								>
+									<path
+										d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
+									/>
+								</svg>
+								<p class="text-[16px] pl-3">Google I/O conference updates</p>
+							</div>
+						</li>
+					</ul>
+					<!-- Two buttons -->
+					<div class="flex justify-center pt-8 pb-2 gap-x-6">
+						<button
+							class="px-8 py-3 text-[14px] rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5"
+						>
+							Google Search
+						</button>
+						<button
+							class="px-8 py-3 text-[14px] rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5"
+						>
+							I'm Feeling Lucky
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
