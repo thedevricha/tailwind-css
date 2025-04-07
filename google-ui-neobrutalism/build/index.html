@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full">
+<html lang="en" id="root" class="h-full">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
 		<script src="js/main.js"></script>
 	</head>
 	<body
-		class="font-public-sans bg-light-blue text-dark-blue font-roboto flex flex-col min-h-full"
+		class="font-public-sans bg-light-blue text-dark-blue font-roboto flex flex-col min-h-full dark:bg-dark-blue dark:text-white"
 	>
 		<header class="flex justify-between items-center py-5 px-5">
 			<section class="flex justify-between items-center">
@@ -34,8 +34,9 @@
 					class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
 					>Images</a
 				>
+				<!-- Search labs -->
 				<div
-					class="px-1 py-1 mx-2 rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group"
+					class="px-1 py-1 mx-2 rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group dark:bg-dark-blue dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
 				>
 					<svg
 						class="fill-current"
@@ -51,16 +52,17 @@
 					</svg>
 					<!-- Tooltip -->
 					<div
-						class="absolute left-1/2 -translate-x-1/2 top-full mt-1 w-max px-3 py-1.5 text-xs text-white border-2 border-dark-blue bg-dark-blue rounded opacity-0 group-hover:opacity-100"
+						class="absolute left-1/2 -translate-x-1/2 top-full mt-1 w-max px-3 py-1.5 text-xs text-white border-2 border-dark-blue bg-dark-blue rounded opacity-0 group-hover:opacity-100 dark:bg-light-blue dark:border-light-blue"
 					>
 						Search Labs
 						<div
-							class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-dark-blue"
+							class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-dark-blue dark:border-b-light-blue"
 						></div>
 					</div>
 				</div>
+				<!-- Google apps -->
 				<div
-					class="px-1 py-1 mx-2 rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group"
+					class="px-1 py-1 mx-2 rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group dark:bg-dark-blue dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
 				>
 					<svg
 						class="fill-current"
@@ -76,16 +78,17 @@
 					</svg>
 					<!-- Tooltip -->
 					<div
-						class="absolute left-1/2 -translate-x-1/2 top-full mt-1 w-max px-3 py-1.5 text-xs text-white border-2 border-dark-blue bg-dark-blue rounded opacity-0 group-hover:opacity-100"
+						class="absolute left-1/2 -translate-x-1/2 top-full mt-1 w-max px-3 py-1.5 text-xs text-white border-2 border-dark-blue bg-dark-blue rounded opacity-0 group-hover:opacity-100 dark:bg-light-blue dark:border-light-blue"
 					>
 						Google apps
 						<div
-							class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-gray-800"
+							class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-dark-blue dark:border-b-light-blue"
 						></div>
 					</div>
 				</div>
+				<!-- User Account -->
 				<button
-					class="px-1 py-1 mx-2 rounded-full border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group"
+					class="px-1 py-1 mx-2 rounded-full border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group  dark:bg-dark-blue dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
 				>
 					<svg
 						class="fill-current"
@@ -101,62 +104,93 @@
 					</svg>
 					<!-- Tooltip -->
 					<div
-						class="absolute right-0 -translate-x-1/right-0 top-full mt-2 w-max px-3 py-1.5 text-xs text-white border-2 border-dark-blue bg-dark-blue rounded opacity-0 group-hover:opacity-100 text-left"
+						class="absolute right-0 -translate-x-1/right-0 top-full mt-2 w-max px-3 py-1.5 text-xs text-white border-2 border-dark-blue bg-dark-blue rounded opacity-0 group-hover:opacity-100 text-left dark:bg-light-blue  dark:border-light-blue"
 					>
 						<span class="text-sm">Google Account </span><br /><span
-							class="text-yellow"
+							class="text-yellow dark:text-dark-blue"
 							>Richa</span
-						><br /><span class="text-yellow">thedevricha@gmail.com</span>
+						><br /><span class="text-yellow dark:text-dark-blue">thedevricha@gmail.com</span>
 						<!-- <div
 							class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-gray-800"
 						></div> -->
 					</div>
 				</button>
+
+				<!-- Light/ dark mode -->
+				<div
+					onclick="changeMode()"
+					class="px-1 py-1 mx-2 rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group  dark:bg-dark-blue dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
+				>
+					<svg
+						class="fill-current hidden dark:inline"
+						xmlns="http://www.w3.org/2000/svg"
+						height="24px"
+						viewBox="0 -960 960 960"
+						width="24px"
+						fill="#004643"
+					>
+						<path
+							d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
+						/>
+					</svg>
+					<svg
+						class="fill-current dark:hidden"
+						xmlns="http://www.w3.org/2000/svg"
+						height="24px"
+						viewBox="0 -960 960 960"
+						width="24px"
+						fill="#004643"
+					>
+						<path
+							d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
+						/>
+					</svg>
+				</div>
 			</section>
 		</header>
 		<main class="w-full pt-10">
 			<section
 				class="text-center flex flex-row justify-center items-center -tracking-normal"
 			>
-				<h1 class="text-9xl text-dark-blue font-google-logo">G</h1>
+				<h1 class="text-9xl text-dark-blue dark:text-light-blue font-google-logo dark:text-light-blue">G</h1>
 				<!-- First cloud -->
 				<div class="relative mr-2">
 					<div
-						class="absolute -top-6 left-4 w-16 h-16 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)]"
+						class="absolute -top-6 left-4 w-16 h-16 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
 					></div>
 					<div
-						class="absolute -top-2 left-0 w-12 h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)]"
+						class="absolute -top-2 left-0 w-12 h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
 					></div>
 					<div
-						class="absolute top-0 left-12 w-14 h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)]"
+						class="absolute top-0 left-12 w-14 h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
 					></div>
 
 					<div
-						class="relative top-4 w-32 h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)]"
+						class="relative top-4 w-32 h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
 					></div>
 					<!-- Rising sun -->
 					<div class="absolute -top-10 left-10 -z-10">
 						<div
-							class="w-24 h-24 bg-yellow-400 rounded-full shadow-lg relative z-10"
+							class="w-24 h-24 bg-yellow rounded-full shadow-lg relative z-10"
 						></div>
 						<div
-							class="absolute top-0 left-1/2 h-8 w-2 bg-yellow-300 -translate-x-1/2 -translate-y-9"
-						></div>
-
-						<div
-							class="absolute top-0 left-1/5 h-8 w-2 bg-yellow-300 -translate-x-1/5 -translate-y-8 transform -rotate-20"
+							class="absolute top-0 left-1/2 h-8 w-2 bg-yellow -translate-x-1/2 -translate-y-9"
 						></div>
 
 						<div
-							class="absolute top-0 right-1/6 h-8 w-2 bg-yellow-300 -translate-x-1/6 -translate-y-8 transform rotate-20"
+							class="absolute top-0 left-1/5 h-8 w-2 bg-yellow -translate-x-1/5 -translate-y-8 transform -rotate-20"
 						></div>
 
 						<div
-							class="absolute top-0 -right-1/12 h-8 w-2 bg-yellow-300 -translate-x-1/12 -translate-y-4 transform rotate-50"
+							class="absolute top-0 right-1/6 h-8 w-2 bg-yellow -translate-x-1/6 -translate-y-8 transform rotate-20"
 						></div>
 
 						<div
-							class="absolute top-0 -right-10 h-8 w-2 bg-yellow-300 -translate-x-4 translate-y-2 transform rotate-[70deg]"
+							class="absolute top-0 -right-1/12 h-8 w-2 bg-yellow -translate-x-1/12 -translate-y-4 transform rotate-50"
+						></div>
+
+						<div
+							class="absolute top-0 -right-10 h-8 w-2 bg-yellow -translate-x-4 translate-y-2 transform rotate-[70deg]"
 						></div>
 					</div>
 				</div>
@@ -164,16 +198,16 @@
 				<!-- Second cloud -->
 				<div class="relative">
 					<div
-						class="absolute -top-4 left-6 w-14 h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)]"
+						class="absolute -top-4 left-6 w-14 h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
 					></div>
 					<div
-						class="absolute -top-2 left-2 w-14 h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)]"
+						class="absolute -top-2 left-2 w-14 h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
 					></div>
 					<div
-						class="absolute top-0 left-16 w-10 h-10 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)]"
+						class="absolute top-0 left-16 w-10 h-10 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
 					></div>
 					<div
-						class="relative top-4 w-28 h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)]"
+						class="relative top-4 w-28 h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
 					></div>
 					<!-- Rain drops -->
 					<!-- first drop -->
@@ -193,7 +227,7 @@
 						class="absolute top-18 left-20 w-2 h-4 bg-blue-400 rounded-b-full rounded-t-md"
 					></div>
 				</div>
-				<h1 class="text-9xl text-dark-blue font-google-logo">gle</h1>
+				<h1 class="text-9xl text-dark-blue dark:text-light-blue font-google-logo">gle</h1>
 			</section>
 			<!-- Search section -->
 			<section class="w-full">
@@ -203,7 +237,7 @@
 						<input
 							type="text"
 							id="search-btn"
-							class="w-2xl max-w-3xl h-12 min-h-11 pl-12 rounded-full border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] transform duration-700 text-dark-blue cursor-default hover:shadow-none hover:translate-0.5 focus:outline-0 active:outline-0 active:shadow-none"
+							class="w-2xl max-w-3xl h-12 min-h-11 pl-12 rounded-full border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] transform duration-700 text-dark-blue cursor-default hover:shadow-none hover:translate-0.5 focus:outline-0 active:outline-0 active:shadow-none dark:border-light-blue dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
 							readonly
 						/>
 
@@ -237,11 +271,11 @@
 
 							<!-- Tooltip -->
 							<div
-								class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1.5 text-xs text-white bg-dark-blue shadow-lg opacity-0 group-hover:opacity-100 transition-opacity rounded pointer-events-none z-10"
+								class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1.5 text-xs text-white bg-dark-blue shadow-lg opacity-0 group-hover:opacity-100 transition-opacity rounded pointer-events-none z-10 dark:bg-light-blue "
 							>
 								Search by voice
 								<div
-									class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-dark-blue"
+									class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-dark-blue dark:border-b-light-blue"
 								></div>
 							</div>
 						</div>
@@ -260,11 +294,11 @@
 							</svg>
 							<!-- Tooltip -->
 							<div
-								class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1.5 text-xs text-white bg-dark-blue shadow-lg opacity-0 group-hover:opacity-100 transition-opacity rounded pointer-events-none z-10"
+								class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1.5 text-xs text-white bg-dark-blue shadow-lg opacity-0 group-hover:opacity-100 transition-opacity rounded pointer-events-none z-10 dark:bg-light-blue"
 							>
 								Search by image
 								<div
-									class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-dark-blue"
+									class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-dark-blue dark:border-b-light-blue"
 								></div>
 							</div>
 						</div>
@@ -275,12 +309,12 @@
 			<section class="w-full">
 				<div class="flex justify-center pb-9 gap-x-6">
 					<button
-						class="px-8 py-3 text-[14px] rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5"
+						class="px-8 py-3 text-[14px] rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 dark:border-white dark:bg-dark-blue dark:dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
 					>
 						Google Search
 					</button>
 					<button
-						class="px-8 py-3 text-[14px] rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5"
+						class="px-8 py-3 text-[14px] rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 dark:border-white dark:bg-dark-blue dark:dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
 					>
 						I'm Feeling Lucky
 					</button>
@@ -293,70 +327,70 @@
 					<li class="text-[14px] font-normal pr-4">
 						<a
 							href="#"
-							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
 							>हिन्दी</a
 						>
 					</li>
 					<li class="text-[14px] font-normal pr-4">
 						<a
 							href="#"
-							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
 							>বাংলা</a
 						>
 					</li>
 					<li class="text-[14px] font-normal pr-4">
 						<a
 							href="#"
-							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
 							>తెలుగు</a
 						>
 					</li>
 					<li class="text-[14px] font-normal pr-4">
 						<a
 							href="#"
-							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
 							>मराठी</a
 						>
 					</li>
 					<li class="text-[14px] font-normal pr-4">
 						<a
 							href="#"
-							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
 							>தமிழ்</a
 						>
 					</li>
 					<li class="text-[14px] font-normal pr-4">
 						<a
 							href="#"
-							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
 							>ગુજરાતી</a
 						>
 					</li>
 					<li class="text-[14px] font-normal pr-4">
 						<a
 							href="#"
-							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
 							>ಕನ್ನಡ</a
 						>
 					</li>
 					<li class="text-[14px] font-normal pr-4">
 						<a
 							href="#"
-							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
 							>മലയാളം</a
 						>
 					</li>
 					<li class="text-[14px] font-normal pr-4">
 						<a
 							href="#"
-							class="text-dark-blue hover:underline decoration-wavy underline-offset-2"
+							class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
 							>ਪੰਜਾਬੀ</a
 						>
 					</li>
 				</ul>
 			</section>
 		</main>
-		<footer class="bg-white mt-auto w-full">
+		<footer class="bg-white dark:bg-footer-dark mt-auto w-full">
 			<!-- Top section -->
 			<section class="border-b-2 border-b-dark-blue py-5 px-5">
 				<p class="px-2">India</p>
@@ -405,18 +439,18 @@
 			class="fixed w-screen h-screen items-center justify-center hidden before:w-screen before:h-screen before:bg-light-blue before:opacity-70 z-50"
 		>
 			<div
-				class="w-3xl absolute rounded-2xl border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] z-100"
+				class="w-3xl absolute rounded-2xl border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] z-100 dark:border-white dark:bg-dark-blue dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
 			>
 				<input
 					type="text"
 					name="search"
 					id="search"
 					autocomplete="off"
-					class="w-full h-12 min-h-11 pl-12 border-dark-blue border-b-2 focus:outline-0 active:outline-0"
+					class="w-full h-12 min-h-11 pl-12 text-dark-blue border-dark-blue border-b-2 focus:outline-0 active:outline-0 dark:border-white dark:text-white"
 				/>
 				<!-- Search Icon -->
 				<div class="absolute top-3 left-4">
-					<svg
+					<svg class="fill-current"
 						xmlns="http://www.w3.org/2000/svg"
 						height="25px"
 						viewBox="0 -960 960 960"
@@ -431,9 +465,9 @@
 				<!-- Close icon  -->
 				<div
 					id="close-btn"
-					class="absolute right-4 top-3 cursor-pointer hover:border-2 rounded-3xl"
+					class="absolute right-4 top-3 cursor-pointer hover:border-2 rounded-3xl dark:text-white"
 				>
-					<svg
+					<svg class="fill-current"
 						xmlns="http://www.w3.org/2000/svg"
 						height="24px"
 						viewBox="0 -960 960 960"
@@ -453,11 +487,11 @@
 						</li>
 
 						<li
-							class="text-lg hover:border-dark-blue hover:border-2 hover:rounded-full"
+							class="text-lg hover:border-dark-blue dark:hover:border-white dark:text-white hover:border-2 hover:rounded-full"
 						>
 							<div class="px-2 py-1.5 flex items-center cursor-pointer">
-								<!-- Trending icon -->
-								<svg
+								<!-- Trending icon --> 
+								<svg class="fill-current"
 									xmlns="http://www.w3.org/2000/svg"
 									height="20px"
 									viewBox="0 -960 960 960"
@@ -473,10 +507,10 @@
 						</li>
 
 						<li
-							class="text-lg hover:border-dark-blue hover:border-2 hover:rounded-full"
+							class="text-lg hover:border-dark-blue dark:hover:border-white dark:text-white hover:border-2 hover:rounded-full"
 						>
 							<div class="px-2 py-1.5 flex items-center cursor-pointer">
-								<svg
+								<svg class="fill-current"
 									xmlns="http://www.w3.org/2000/svg"
 									height="20px"
 									viewBox="0 -960 960 960"
@@ -494,10 +528,10 @@
 						</li>
 
 						<li
-							class="text-lg hover:border-dark-blue hover:border-2 hover:rounded-full"
+							class="text-lg hover:border-dark-blue dark:hover:border-white dark:text-white hover:border-2 hover:rounded-full"
 						>
 							<div class="px-2 py-1.5 flex items-center cursor-pointer">
-								<svg
+								<svg class="fill-current"
 									xmlns="http://www.w3.org/2000/svg"
 									height="20px"
 									viewBox="0 -960 960 960"
@@ -513,10 +547,10 @@
 						</li>
 
 						<li
-							class="text-lg hover:border-dark-blue hover:border-2 hover:rounded-full"
+							class="text-lg hover:border-dark-blue dark:hover:border-white dark:text-white hover:border-2 hover:rounded-full"
 						>
 							<div class="px-2 py-1.5 flex items-center cursor-pointer">
-								<svg
+								<svg class="fill-current"
 									xmlns="http://www.w3.org/2000/svg"
 									height="20px"
 									viewBox="0 -960 960 960"
@@ -534,12 +568,12 @@
 					<!-- Two buttons -->
 					<div class="flex justify-center pt-8 pb-2 gap-x-6">
 						<button
-							class="px-8 py-3 text-[14px] rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5"
+							class="px-8 py-3 text-[14px] rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 dark:border-white dark:bg-dark-blue dark:dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
 						>
 							Google Search
 						</button>
 						<button
-							class="px-8 py-3 text-[14px] rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5"
+							class="px-8 py-3 text-[14px] rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 dark:border-white dark:bg-dark-blue dark:dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
 						>
 							I'm Feeling Lucky
 						</button>

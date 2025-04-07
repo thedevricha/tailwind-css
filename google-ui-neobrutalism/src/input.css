@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
 
 @import "tailwindcss";
-
+@custom-variant dark (&:where(.dark, .dark *));
 @theme {
     --font-public-sans: "Public Sans", "sans-serif";
     --font-google-logo: "Barrio", "system-ui";
     --color-light-blue: #abd1c6;
     --color-dark-blue: #004643;
     --color-yellow: #dba146;
+    --color-footer-dark: #225e5a;
 }
