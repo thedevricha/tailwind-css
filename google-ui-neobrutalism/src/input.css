@@ -1,13 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barrio&display=swap");
 
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+@layer components {
+  .suggestion-list {
+    @apply hover:border-dark-blue border-2 border-transparent text-lg hover:rounded-full dark:text-white dark:hover:border-white;
+  }
+  .links {
+    @apply px-2 text-[14px] decoration-wavy underline-offset-2 hover:underline;
+  }
+  .lang-links {
+    @apply text-dark-blue decoration-wavy underline-offset-2 hover:underline dark:text-white;
+  }
+  .lg-btn {
+    @apply hover:bg-yellow hover:translate-0.5 hover:text-white hover:shadow-none;
+    @apply dark:bg-dark-blue dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)];
+  }
+  .outer-lg-btn {
+    @apply border-dark-blue transform cursor-pointer rounded border-2 bg-white p-2 text-[12px] shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 md:px-8 md:py-3 md:text-[14px];
+  }
+  .modal-lg-btn {
+    @apply border-dark-blue w-full transform cursor-pointer rounded border-2 bg-white px-4 py-3 text-xs shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 md:w-auto md:py-2 md:text-sm lg:px-8;
+  }
+  .tooltip-arrow {
+    @apply border-b-dark-blue dark:border-b-light-blue absolute top-0 left-1/2 h-0 w-0;
+  }
+  .default-shadow {
+    @apply shadow-[2px_2px_0px_1px_rgba(0,70,67,1)];
+  }
+  .light-shadow {
+    @apply shadow-[2px_2px_0px_1px_rgba(171,209,198,1)];
+  }
+  .white-shadow {
+    @apply shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)];
+  }
+}
 @theme {
-    --font-public-sans: "Public Sans", "sans-serif";
-    --font-google-logo: "Barrio", "system-ui";
-    --color-light-blue: #abd1c6;
-    --color-dark-blue: #004643;
-    --color-yellow: #dba146;
-    --color-footer-dark: #225e5a;
+  --font-public-sans: "Public Sans", "sans-serif";
+  --font-google-logo: "Barrio", "system-ui";
+  --color-light-blue: #abd1c6;
+  --color-dark-blue: #004643;
+  --color-yellow: #dba146;
+  --color-footer-dark: #225e5a;
 }
