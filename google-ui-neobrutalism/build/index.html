@@ -1,613 +1,613 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" id="root" class="h-full">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Google UI - Neobrutalism Theme</title>
-		<link rel="stylesheet" href="css/style.css" />
-		<script src="js/main.js"></script>
-	</head>
-	<body
-		class="font-public-sans bg-light-blue text-dark-blue font-roboto flex flex-col min-h-full dark:bg-dark-blue dark:text-white"
-	>
-		<header class="flex justify-between items-center py-5 px-5">
-			<section class="flex justify-between items-center">
-				<a
-					href="#"
-					class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
-					>About</a
-				>
-				<a
-					href="#"
-					class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
-					>Store</a
-				>
-			</section>
-			<section class="flex justify-between items-center">
-				<a
-					href="#"
-					class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
-					>Gmail</a
-				>
-				<a
-					href="#"
-					class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
-					>Images</a
-				>
-				<!-- Search labs -->
-				<div
-					class="p-0 md:p-1 mx-2 rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group dark:bg-dark-blue dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
-				>
-					<svg
-						class="fill-current w-6 h-6 md:w-auto"
-						xmlns="http://www.w3.org/2000/svg"
-						height="24px"
-						viewBox="0 -960 960 960"
-						width="24px"
-						fill="#444746"
-					>
-						<path
-							d="M200-120q-51 0-72.5-45.5T138-250l222-270v-240h-40q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760h-40v240l222 270q32 39 10.5 84.5T760-120H200Zm80-120h400L544-400H416L280-240Zm-80 40h560L520-492v-268h-80v268L200-200Zm280-280Z"
-						/>
-					</svg>
-					<!-- Tooltip -->
-					<div
-						class="absolute left-1/2 -translate-x-1/2 top-full mt-1 w-max p-1 md:px-3 md:py-1.5 text-xs text-white border-2 border-dark-blue bg-dark-blue rounded opacity-0 group-hover:opacity-100 dark:bg-light-blue dark:border-light-blue z-10 "
-					>
-						Search Labs
-						<div
-							class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-dark-blue dark:border-b-light-blue"
-						></div>
-					</div>
-				</div>
-				<!-- Google apps -->
-				<div
-					class="p-0 md:p-1 mx-2 rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group dark:bg-dark-blue dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
-				>
-					<svg
-						class="fill-current"
-						xmlns="http://www.w3.org/2000/svg"
-						height="24px"
-						viewBox="0 -960 960 960"
-						width="24px"
-						fill="#444746"
-					>
-						<path
-							d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"
-						/>
-					</svg>
-					<!-- Tooltip -->
-					<div
-						class="absolute left-1/2 -translate-x-1/2 top-full mt-1 w-max px-3 py-1.5 text-xs text-white border-2 border-dark-blue bg-dark-blue rounded opacity-0 group-hover:opacity-100 dark:bg-light-blue dark:border-light-blue z-10"
-					>
-						Google apps
-						<div
-							class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-dark-blue dark:border-b-light-blue"
-						></div>
-					</div>
-				</div>
-				<!-- User Account -->
-				<button
-					class="p-0 md:p-1 mx-2 rounded-full border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group dark:bg-dark-blue dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
-				>
-					<svg
-						class="fill-current"
-						xmlns="http://www.w3.org/2000/svg"
-						height="24px"
-						viewBox="0 -960 960 960"
-						width="24px"
-						fill="#444746"
-					>
-						<path
-							d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"
-						/>
-					</svg>
-					<!-- Tooltip -->
-					<div
-						class="absolute right-0 -translate-x-1/right-0 top-full mt-2 w-max px-3 py-1.5 text-xs text-white border-2 border-dark-blue bg-dark-blue rounded opacity-0 group-hover:opacity-100 text-left dark:bg-light-blue dark:border-light-blue"
-					>
-						<span class="text-xs md:text-sm">Google Account </span><br /><span
-							class="text-yellow dark:text-dark-blue"
-							>Richa</span
-						><br /><span class="text-yellow dark:text-dark-blue"
-							>thedevricha@gmail.com</span
-						>
-						<!-- <div
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google UI - Neobrutalism Theme</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body
+    class="font-public-sans bg-light-blue text-dark-blue font-roboto dark:bg-dark-blue flex min-h-full flex-col dark:text-white"
+  >
+    <header class="flex items-center justify-between px-5 py-5">
+      <section class="flex items-center justify-between">
+        <a
+          href="#"
+          class="px-2 text-[14px] decoration-wavy underline-offset-2 hover:underline"
+          >About</a
+        >
+        <a
+          href="#"
+          class="px-2 text-[14px] decoration-wavy underline-offset-2 hover:underline"
+          >Store</a
+        >
+      </section>
+      <section class="flex items-center justify-between">
+        <a
+          href="#"
+          class="px-2 text-[14px] decoration-wavy underline-offset-2 hover:underline"
+          >Gmail</a
+        >
+        <a
+          href="#"
+          class="px-2 text-[14px] decoration-wavy underline-offset-2 hover:underline"
+          >Images</a
+        >
+        <!-- Search labs -->
+        <div
+          class="border-dark-blue hover:bg-yellow group dark:bg-dark-blue mx-2 transform cursor-pointer rounded border-2 bg-white p-0 shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 hover:translate-0.5 hover:text-white hover:shadow-none md:p-1 dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
+        >
+          <svg
+            class="h-6 w-6 fill-current md:w-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#444746"
+          >
+            <path
+              d="M200-120q-51 0-72.5-45.5T138-250l222-270v-240h-40q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760h-40v240l222 270q32 39 10.5 84.5T760-120H200Zm80-120h400L544-400H416L280-240Zm-80 40h560L520-492v-268h-80v268L200-200Zm280-280Z"
+            />
+          </svg>
+          <!-- Tooltip -->
+          <div
+            class="border-dark-blue bg-dark-blue dark:bg-light-blue dark:border-light-blue absolute top-full left-1/2 z-10 mt-1 w-max -translate-x-1/2 rounded border-2 p-1 text-xs text-white opacity-0 group-hover:opacity-100 md:px-3 md:py-1.5"
+          >
+            Search Labs
+            <div
+              class="border-b-dark-blue dark:border-b-light-blue absolute top-0 left-1/2 h-0 w-0 -translate-x-1/2 -translate-y-full border-x-5 border-b-5 border-x-transparent"
+            ></div>
+          </div>
+        </div>
+        <!-- Google apps -->
+        <div
+          class="border-dark-blue hover:bg-yellow group dark:bg-dark-blue mx-2 transform cursor-pointer rounded border-2 bg-white p-0 shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 hover:translate-0.5 hover:text-white hover:shadow-none md:p-1 dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
+        >
+          <svg
+            class="fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#444746"
+          >
+            <path
+              d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"
+            />
+          </svg>
+          <!-- Tooltip -->
+          <div
+            class="border-dark-blue bg-dark-blue dark:bg-light-blue dark:border-light-blue absolute top-full left-1/2 z-10 mt-1 w-max -translate-x-1/2 rounded border-2 px-3 py-1.5 text-xs text-white opacity-0 group-hover:opacity-100"
+          >
+            Google apps
+            <div
+              class="border-b-dark-blue dark:border-b-light-blue absolute top-0 left-1/2 h-0 w-0 -translate-x-1/2 -translate-y-full border-x-5 border-b-5 border-x-transparent"
+            ></div>
+          </div>
+        </div>
+        <!-- User Account -->
+        <button
+          class="border-dark-blue hover:bg-yellow group dark:bg-dark-blue mx-2 transform cursor-pointer rounded-full border-2 bg-white p-0 shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 hover:translate-0.5 hover:text-white hover:shadow-none md:p-1 dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
+        >
+          <svg
+            class="fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#444746"
+          >
+            <path
+              d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"
+            />
+          </svg>
+          <!-- Tooltip -->
+          <div
+            class="-translate-x-1/right-0 border-dark-blue bg-dark-blue dark:bg-light-blue dark:border-light-blue absolute top-full right-0 mt-2 w-max rounded border-2 px-3 py-1.5 text-left text-xs text-white opacity-0 group-hover:opacity-100"
+          >
+            <span class="text-xs md:text-sm">Google Account </span><br /><span
+              class="text-yellow dark:text-dark-blue"
+              >Richa</span
+            ><br /><span class="text-yellow dark:text-dark-blue"
+              >thedevricha@gmail.com</span
+            >
+            <!-- <div
 							class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-gray-800"
 						></div> -->
-					</div>
-				</button>
+          </div>
+        </button>
 
-				<!-- Light/ dark mode -->
-				<div
-					onclick="changeMode()"
-					class="p-0 md:p-1 mx-2 rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 group dark:bg-dark-blue dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
-				>
-					<svg
-						class="fill-current hidden dark:inline"
-						xmlns="http://www.w3.org/2000/svg"
-						height="24px"
-						viewBox="0 -960 960 960"
-						width="24px"
-						fill="#004643"
-					>
-						<path
-							d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
-						/>
-					</svg>
-					<svg
-						class="fill-current dark:hidden"
-						xmlns="http://www.w3.org/2000/svg"
-						height="24px"
-						viewBox="0 -960 960 960"
-						width="24px"
-						fill="#004643"
-					>
-						<path
-							d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
-						/>
-					</svg>
-				</div>
-			</section>
-		</header>
-		<main class="w-full pt-10">
-			<!-- Google Logo Section -->
-			<section
-				class="flex justify-center items-center gap-0 lg:gap-1 w-full mx-auto"
-			>
-				<!-- Google Text (G) -->
-				<h1
-					class="text-7xl lg:text-9xl text-dark-blue dark:text-light-blue font-google-logo"
-				>G</h1>
+        <!-- Light/ dark mode -->
+        <div
+          onclick="changeMode()"
+          class="border-dark-blue hover:bg-yellow group dark:bg-dark-blue mx-2 transform cursor-pointer rounded border-2 bg-white p-0 shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 hover:translate-0.5 hover:text-white hover:shadow-none md:p-1 dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
+        >
+          <svg
+            class="hidden fill-current dark:inline"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#004643"
+          >
+            <path
+              d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
+            />
+          </svg>
+          <svg
+            class="fill-current dark:hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#004643"
+          >
+            <path
+              d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
+            />
+          </svg>
+        </div>
+      </section>
+    </header>
+    <main class="w-full pt-10">
+      <!-- Google Logo Section -->
+      <section
+        class="mx-auto flex w-full items-center justify-center gap-0 lg:gap-1"
+      >
+        <!-- Google Text (G) -->
+        <h1
+          class="text-dark-blue dark:text-light-blue font-google-logo text-7xl md:text-9xl"
+        >
+          G
+        </h1>
 
-				<!-- First Cloud with Sun -->
-				<div
-					class="relative scale-85 md:scale-90 lg:scale-100"
-				>
-					<!-- Cloud Circles -->
-					<div
-						class="absolute -top-6 left-4 w-11 md:w-16 h-11 md:h-16 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
-					></div>
-					<div
-						class="absolute -top-2 left-0 w-10 md:w-12 h-10 md:h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
-					></div>
-					<div
-						class="absolute top-0 left-12 w-8 md:w-14 h-8 md:h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
-					></div>
+        <!-- First Cloud with Sun -->
+        <div class="relative scale-85 md:scale-90 lg:scale-100">
+          <!-- Cloud Circles -->
+          <div
+            class="absolute -top-6 left-4 h-11 w-11 rounded-full bg-white shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] md:h-16 md:w-16 dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
+          ></div>
+          <div
+            class="absolute -top-2 left-0 h-10 w-10 rounded-full bg-white shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] md:h-12 md:w-12 dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
+          ></div>
+          <div
+            class="absolute top-0 left-12 h-8 w-8 rounded-full bg-white shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] md:h-14 md:w-14 dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
+          ></div>
 
-					<!-- Main Cloud -->
-					<div
-						class="relative top-4 w-20 md:w-32 h-5 md:h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
-					></div>
+          <!-- Main Cloud -->
+          <div
+            class="relative top-4 h-5 w-20 rounded-full bg-white shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] md:h-12 md:w-32 dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
+          ></div>
 
-					<!-- Rising Sun -->
-					<div class="absolute -top-10 left-10 -z-10">
-						<div
-							class="w-15 md:w-24 h-15 md:h-24 bg-yellow rounded-full shadow-lg relative z-10"
-						></div>
-						<div
-							class="absolute top-0 left-[20%] h-6 md:h-8 w-1.5 md:w-2 bg-yellow -translate-x-[20%] -translate-y-6 md:-translate-y-8 transform -rotate-20"
-						></div>
-						<div
-							class="absolute top-0 left-1/2 h-6 md:h-8 w-1.5 md:w-2 bg-yellow -translate-x-1/2 -translate-y-7 md:-translate-y-9"
-						></div>
-						
-						<div
-							class="absolute top-0 right-[16%] h-6 md:h-8 w-1.5 md:w-2 bg-yellow -translate-x-[16%] -translate-y-6 md:-translate-y-8 transform rotate-20"
-						></div>
-						<div
-							class="absolute top-0 -right-[8%] h-6 md:h-8 w-1.5 md:w-2 bg-yellow translate-x-0.5 md:-translate-x-[8%] -translate-y-3 md:-translate-y-4 transform rotate-53 md:rotate-50"
-						></div>
-						<div
-							class="absolute top-0 -right-10 h-6 md:h-8 w-1.5 md:w-2 bg-yellow -translate-x-6 md:-translate-x-5 translate-y-1.5 transform rotate-[70deg]"
-						></div>
-					</div>
-				</div>
+          <!-- Rising Sun -->
+          <div class="absolute -top-10 left-10 -z-10">
+            <div
+              class="bg-yellow relative z-10 h-15 w-15 rounded-full shadow-lg md:h-24 md:w-24"
+            ></div>
+            <div
+              class="bg-yellow absolute top-0 left-[20%] h-6 w-1.5 -translate-x-[20%] -translate-y-6 -rotate-20 transform md:h-8 md:w-2 md:-translate-y-8"
+            ></div>
+            <div
+              class="bg-yellow absolute top-0 left-1/2 h-6 w-1.5 -translate-x-1/2 -translate-y-7 md:h-8 md:w-2 md:-translate-y-9"
+            ></div>
 
-				<!-- Second Cloud with Raindrops -->
-				<div class="relative scale-85 md:scale-90 lg:scale-100">
-					<div
-						class="absolute -top-4 left-6 w-12 md:w-14 h-12 md:h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
-					></div>
-					<div
-						class="absolute -top-2 left-2 w-10 md:w-14 h-10 md:h-14 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
-					></div>
-					<div
-						class="absolute top-0 left-16 w-8 md:w-10 h-8 md:h-10 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
-					></div>
-					<div
-						class="relative top-4 w-24 md:w-28 h-5 md:h-12 bg-white rounded-full shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
-					></div>
+            <div
+              class="bg-yellow absolute top-0 right-[16%] h-6 w-1.5 -translate-x-[16%] -translate-y-6 rotate-20 transform md:h-8 md:w-2 md:-translate-y-8"
+            ></div>
+            <div
+              class="bg-yellow absolute top-0 -right-[8%] h-6 w-1.5 translate-x-0.5 -translate-y-3 rotate-53 transform md:h-8 md:w-2 md:-translate-x-[8%] md:-translate-y-4 md:rotate-50"
+            ></div>
+            <div
+              class="bg-yellow absolute top-0 -right-10 h-6 w-1.5 -translate-x-6 translate-y-1.5 rotate-[70deg] transform md:h-8 md:w-2 md:-translate-x-5"
+            ></div>
+          </div>
+        </div>
 
-					<!-- Rain drops -->
-					<div
-						class="absolute top-11 md:top-[72px] left-6 w-1.5 h-3 md:h-6 bg-blue-400 rounded-b-full rounded-t-md"
-					></div>
-					<div
-						class="absolute top-13 md:top-[80px] left-11 w-1.5 h-3 md:h-5 bg-blue-400 rounded-b-full rounded-t-md"
-					></div>
-					<div
-						class="absolute top-10 md:top-[68px] left-[62px] w-1.5 h-6 md:h-9 bg-blue-400 rounded-b-full rounded-t-md"
-					></div>
-					<div
-						class="absolute top-12 md:top-[72px] left-[80px] w-1.5 h-3 md:h-4 bg-blue-400 rounded-b-full rounded-t-md"
-					></div>
-				</div>
+        <!-- Second Cloud with Raindrops -->
+        <div class="relative scale-85 md:scale-90 lg:scale-100">
+          <div
+            class="absolute -top-4 left-6 h-12 w-12 rounded-full bg-white shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] md:h-14 md:w-14 dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
+          ></div>
+          <div
+            class="absolute -top-2 left-2 h-10 w-10 rounded-full bg-white shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] md:h-14 md:w-14 dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
+          ></div>
+          <div
+            class="absolute top-0 left-16 h-8 w-8 rounded-full bg-white shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] md:h-10 md:w-10 dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
+          ></div>
+          <div
+            class="relative top-4 h-5 w-24 rounded-full bg-white shadow-[2px_2px_0px_1px_rgba(0,70,67,1)] md:h-12 md:w-28 dark:shadow-[2px_2px_0px_1px_rgba(171,209,198,1)]"
+          ></div>
 
-				<!-- Google Text (gle) -->
-				<h1
-					class="text-7xl lg:text-9xl text-dark-blue dark:text-light-blue font-google-logo"
-				>
-					gle
-				</h1>
-			</section>
+          <!-- Rain drops -->
+          <div
+            class="absolute top-11 left-6 h-3 w-1.5 rounded-t-md rounded-b-full bg-blue-400 md:top-[72px] md:h-6"
+          ></div>
+          <div
+            class="absolute top-13 left-11 h-3 w-1.5 rounded-t-md rounded-b-full bg-blue-400 md:top-[80px] md:h-5"
+          ></div>
+          <div
+            class="absolute top-10 left-[62px] h-6 w-1.5 rounded-t-md rounded-b-full bg-blue-400 md:top-[68px] md:h-9"
+          ></div>
+          <div
+            class="absolute top-12 left-[80px] h-3 w-1.5 rounded-t-md rounded-b-full bg-blue-400 md:top-[72px] md:h-4"
+          ></div>
+        </div>
 
-			<!-- Search section -->
-			<section class="w-full lg:pt-2 md:pt-6 pt-2 ">
-				<div
-					class="flex justify-center pt-3 sm:pt-4 md:pt-5 pb-6 md:pb-10"
-				>
-					<div
-						class="relative w-full max-w-md md:max-w-xl lg:max-w-2xl"
-					>
-						<!-- Search input -->
-						<input
-							type="text"
-							id="search-btn"
-							class="w-full h-10 md:h-12 min-h-10 pl-10 md:pl-12 pr-20 rounded-full border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] transform duration-700 text-dark-blue text-sm md:text-base cursor-default hover:shadow-none hover:translate-0.5 focus:outline-0 active:outline-0 active:shadow-none dark:border-light-blue dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
-							readonly
-						/>
-						<!-- Search Icon -->
-						<div class="absolute top-1/2 -translate-y-1/2 left-3 md:left-4">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								height="20px"
-								viewBox="0 -960 960 960"
-								width="20px"
-								class="w-5 h-5 sm:w-6 sm:h-6"
-								fill="#004643"
-							>
-								<path
-									d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"
-								/>
-							</svg>
-						</div>
-						<!-- Search by voice  -->
-						<div
-							class="absolute right-10 sm:right-12 top-1/2 -translate-y-1/2 cursor-pointer group"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="w-5 h-5 sm:w-6 sm:h-6"
-								viewBox="0 -960 960 960"
-								fill="#004643"
-							>
-								<path
-									d="M480-384q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm0-240Zm-36 480v-99q-98.8-13.1-163.4-87.05Q216-404 216-504h72q0 79.68 56.23 135.84 56.22 56.16 136 56.16Q560-312 616-368.16q56-56.16 56-135.84h72q0 100-64.6 173.95Q614.8-256.1 516-243v99h-72Zm36-312q20.4 0 34.2-13.8Q528-483.6 528-504v-240q0-20.4-13.8-34.2Q500.4-792 480-792q-20.4 0-34.2 13.8Q432-764.4 432-744v240q0 20.4 13.8 34.2Q459.6-456 480-456Z"
-								/>
-							</svg>
-							<!-- Tooltip -->
-							<div
-								class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-2 sm:px-3 py-1 sm:py-1.5 text-xs text-white bg-dark-blue shadow-lg opacity-0 group-hover:opacity-100 transition-opacity rounded pointer-events-none z-10 dark:bg-light-blue"
-							>
-								Search by voice
-								<div
-									class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-4 sm:border-x-5 border-x-transparent border-b-4 sm:border-b-5 border-b-dark-blue dark:border-b-light-blue"
-								></div>
-							</div>
-						</div>
-						<!-- Search by image -->
-						<div
-							class="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 cursor-pointer group"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="w-5 h-5 sm:w-6 sm:h-6"
-								viewBox="0 -960 960 960"
-								fill="#004643"
-							>
-								<path
-									d="M216-144q-29.7 0-50.85-21.5Q144-187 144-216v-528q0-29 21.15-50.5T216-816h528q29.7 0 50.85 21.5Q816-773 816-744v528q0 29-21.15 50.5T744-144H216Zm0-72h528v-528H216v528Zm48-72h432L552-480 444-336l-72-96-108 144Zm-48 72v-528 528Z"
-								/>
-							</svg>
-							<!-- Tooltip -->
-							<div
-								class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-2 sm:px-3 py-1 sm:py-1.5 text-xs text-white bg-dark-blue shadow-lg opacity-0 group-hover:opacity-100 transition-opacity rounded pointer-events-none z-10 dark:bg-light-blue"
-							>
-								Search by image
-								<div
-									class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-4 sm:border-x-5 border-x-transparent border-b-4 sm:border-b-5 border-b-dark-blue dark:border-b-light-blue"
-								></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- Buttons section -->
-			<section class="w-full">
-				<div class="flex justify-center pb-6 md:pb-9 gap-x-3 md:gap-x-6">
-					<button
-						class="p-2 md:px-8 md:py-3 text-[12px] md:text-[14px] rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 dark:border-white dark:bg-dark-blue dark:dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
-					>
-						Google Search
-					</button>
-					<button
-						class="p-2 md:px-8 md:py-3 text-[12px] md:text-[14px] rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 dark:border-white dark:bg-dark-blue dark:dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
-					>
-						I'm Feeling Lucky
-					</button>
-				</div>
-			</section>
-			<!-- Language section -->
-			<section class="w-full">
-				<div class="flex md:flex-row flex-col md:gap-x-3 justify-center items-center">
-					<p class="text-[14px] font-light text-center md:text-right">Google offered in:</p>
-					<ul class="flex flex-row justify-center text-[12px] md:text-[14px] font-normal">
-						<li class="pr-4">
-							<a
-								href="#"
-								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-								>हिन्दी</a
-							>
-						</li>
-						<li class="pr-4">
-							<a
-								href="#"
-								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-								>বাংলা</a
-							>
-						</li>
-						<li class="pr-4">
-							<a
-								href="#"
-								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-								>తెలుగు</a
-							>
-						</li>
-						<li class="pr-4">
-							<a
-								href="#"
-								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-								>मराठी</a
-							>
-						</li>
-						<li class="pr-4">
-							<a
-								href="#"
-								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-								>தமிழ்</a
-							>
-						</li>
-						<li class="pr-4">
-							<a
-								href="#"
-								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-								>ગુજરાતી</a
-							>
-						</li>
-						<li class="pr-4">
-							<a
-								href="#"
-								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-								>ಕನ್ನಡ</a
-							>
-						</li>
-						<li class="pr-4">
-							<a
-								href="#"
-								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-								>മലയാളം</a
-							>
-						</li>
-						<li class="pr-4">
-							<a
-								href="#"
-								class="text-dark-blue dark:text-white hover:underline decoration-wavy underline-offset-2"
-								>ਪੰਜਾਬੀ</a
-							>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</main>
-		<footer class="bg-white dark:bg-footer-dark mt-auto w-full">
-			<!-- Top section -->
-			<section class="border-b-2 border-b-dark-blue md:p-5 p-2">
-				<p class="px-2">India</p>
-			</section>
-			<!-- Bottom section -->
-			<section class="flex justify-between items-center p-2 md:p-5 flex-col md:flex-row">
-				<section class="flex justify-between items-center mb-2 md:mb-0">
-					<a
-						href="#"
-						class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
-						>Advertising</a
-					>
-					<a
-						href="#"
-						class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
-						>Business</a
-					>
-					<a
-						href="#"
-						class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
-						>How Search works</a
-					>
-				</section>
-				<section class="flex justify-between items-center">
-					<a
-						href="#"
-						class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
-						>Privacy</a
-					>
-					<a
-						href="#"
-						class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
-						>Terms</a
-					>
-					<a
-						href="#"
-						class="px-2 text-[14px] hover:underline decoration-wavy underline-offset-2"
-						>Settings</a
-					>
-				</section>
-			</section>
-		</footer>
-		<!-- Search model -->
-		<div
-			id="search-modal"
-			class="fixed w-screen h-screen items-center justify-center hidden before:w-screen before:h-screen before:bg-light-blue before:opacity-70 z-50 max-w-full mx-auto"
-		>
-			<div
-				class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] z-100 dark:border-white dark:bg-dark-blue dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)] w-100 md:w-3xl lg:w-1/2 mx-auto"
-			>
-				<input
-					type="text"
-					name="search"
-					id="search"
-					autocomplete="off"
-					class="w-full h-12 min-h-11 pl-12 text-dark-blue border-dark-blue border-b-2 focus:outline-0 active:outline-0 dark:border-white dark:text-white text-sm md:text-base rounded-t-2xl"
-				/>
-				<!-- Search Icon -->
-				<div class="absolute top-3 left-4">
-					<svg
-						class="fill-current"
-						xmlns="http://www.w3.org/2000/svg"
-						height="25px"
-						viewBox="0 -960 960 960"
-						width="25px"
-						fill="#004643"
-					>
-						<path
-							d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"
-						/>
-					</svg>
-				</div>
-				<!-- Close icon  -->
-				<div
-					id="close-btn"
-					class="absolute right-4 top-3 cursor-pointer hover:border-2 rounded-3xl dark:text-white"
-				>
-					<svg
-						class="fill-current"
-						xmlns="http://www.w3.org/2000/svg"
-						height="24px"
-						viewBox="0 -960 960 960"
-						width="24px"
-						fill="#004643"
-					>
-						<path
-							d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-						/>
-					</svg>
-				</div>
-				<!-- Suggestion list -->
-				<div class="py-2 px-3 md:py-5">
-					<ul>
-						<li>
-							<p class="px-2 text-light-blue text-sm md:text-base">
-								Trending searches
-							</p>
-						</p>
+        <!-- Google Text (gle) -->
+        <h1
+          class="text-dark-blue dark:text-light-blue font-google-logo text-7xl md:text-9xl"
+        >
+          gle
+        </h1>
+      </section>
 
-						<li
-							class="text-lg hover:border-dark-blue dark:hover:border-white dark:text-white hover:border-2 hover:rounded-full"
-						>
-							<div class="px-2 py-1.5 flex items-center cursor-pointer">
-								<!-- Trending icon -->
-								<svg
-									class="fill-current w-4 h-4 md:w-5 md:h-5"
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 -960 960 960"
-									fill="#004643"
-								>
-									<path
-										d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
-									/>
-								</svg>
-								<p class="text-sm md:text-base pl-3">
-									Latest AI technologies in 2025
-								</p>
-							</div>
-						</li>
-
-						<li
-							class="text-lg hover:border-dark-blue dark:hover:border-white dark:text-white hover:border-2 hover:rounded-full"
-						>
-							<div class="px-2 py-1.5 flex items-center cursor-pointer">
-								<svg
-									class="fill-current w-4 h-4 md:w-5 md:h-5"
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 -960 960 960"
-									fill="#004643"
-								>
-									<path
-										d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
-									/>
-								</svg>
-								<p class="text-sm md:text-base pl-3">
-									How to use Tailwind CSS effectively
-								</p>
-							</div>
-						</li>
-
-						<li
-							class="text-lg hover:border-dark-blue dark:hover:border-white dark:text-white hover:border-2 hover:rounded-full"
-						>
-							<div class="px-2 py-1.5 flex items-center cursor-pointer">
-								<svg
-									class="fill-current w-4 h-4 md:w-5 md:h-5"
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 -960 960 960"
-									fill="#004643"
-								>
-									<path
-										d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
-									/>
-								</svg>
-								<p class="text-sm md:text-base pl-3">
-									Web development roadmap 2025
-								</p>
-							</div>
-						</li>
-
-						<li
-							class="text-lg hover:border-dark-blue dark:hover:border-white dark:text-white hover:border-2 hover:rounded-full"
-						>
-							<div class="px-2 py-1.5 flex items-center cursor-pointer">
-								<svg
-									class="fill-current w-4 h-4 md:w-5 md:h-5"
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 -960 960 960"
-									fill="#004643"
-								>
-									<path
-										d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
-									/>
-								</svg>
-								<p class="text-sm md:text-base pl-3">
-									Google I/O conference updates
-								</p>
-							</div>
-						</li>
-					</ul>
-					<!-- Two buttons -->
-					<div
-						class="flex flex-row justify-center items-center pt-3 md:pt-8 pb-2 md:gap-y-4 gap-y-0 gap-x-4 md:gap-x-6"
-					>
-						<button
-							class="w-full sm:w-auto px-4 lg:px-8 py-2 sm:py-3 text-xs md:text-sm rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 dark:border-white dark:bg-dark-blue dark:dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
-						>
-							Google Search
-						</button>
-						<button
-							class="w-full sm:w-auto px-4 lg:px-8 py-2 sm:py-3 text-xs md:text-sm rounded border-2 border-dark-blue bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] cursor-pointer transform duration-700 hover:bg-yellow hover:text-white hover:shadow-none hover:translate-0.5 dark:border-white dark:bg-dark-blue dark:dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
-						>
-							I'm Feeling Lucky
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
+      <!-- Search section -->
+      <section class="w-full pt-2">
+        <div class="flex justify-center pt-3 pb-6 sm:pt-4 md:pt-5 md:pb-10">
+          <div class="relative w-full max-w-md md:max-w-xl lg:max-w-2xl">
+            <!-- Search input -->
+            <input
+              type="text"
+              id="search-btn"
+              class="border-dark-blue text-dark-blue dark:border-light-blue h-10 min-h-10 w-full transform cursor-default rounded-full border-2 bg-white pr-20 pl-10 text-sm shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 hover:translate-0.5 hover:shadow-none focus:outline-0 active:shadow-none active:outline-0 md:h-12 md:pl-12 md:text-base dark:shadow-[2px_2px_0px_1px_rgba(171,_209,_198,_1.0)]"
+              readonly
+            />
+            <!-- Search Icon -->
+            <div class="absolute top-1/2 left-3 -translate-y-1/2 md:left-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20px"
+                viewBox="0 -960 960 960"
+                width="20px"
+                class="h-5 w-5 sm:h-6 sm:w-6"
+                fill="#004643"
+              >
+                <path
+                  d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"
+                />
+              </svg>
+            </div>
+            <!-- Search by voice  -->
+            <div
+              class="group absolute top-1/2 right-10 -translate-y-1/2 cursor-pointer sm:right-12"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 sm:h-6 sm:w-6"
+                viewBox="0 -960 960 960"
+                fill="#004643"
+              >
+                <path
+                  d="M480-384q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm0-240Zm-36 480v-99q-98.8-13.1-163.4-87.05Q216-404 216-504h72q0 79.68 56.23 135.84 56.22 56.16 136 56.16Q560-312 616-368.16q56-56.16 56-135.84h72q0 100-64.6 173.95Q614.8-256.1 516-243v99h-72Zm36-312q20.4 0 34.2-13.8Q528-483.6 528-504v-240q0-20.4-13.8-34.2Q500.4-792 480-792q-20.4 0-34.2 13.8Q432-764.4 432-744v240q0 20.4 13.8 34.2Q459.6-456 480-456Z"
+                />
+              </svg>
+              <!-- Tooltip -->
+              <div
+                class="bg-dark-blue dark:bg-light-blue pointer-events-none absolute top-full left-1/2 z-10 mt-2 w-max -translate-x-1/2 rounded px-2 py-1 text-xs text-white opacity-0 shadow-lg transition-opacity group-hover:opacity-100 sm:px-3 sm:py-1.5"
+              >
+                Search by voice
+                <div
+                  class="border-b-dark-blue dark:border-b-light-blue absolute top-0 left-1/2 h-0 w-0 -translate-x-1/2 -translate-y-full border-x-4 border-b-4 border-x-transparent sm:border-x-5 sm:border-b-5"
+                ></div>
+              </div>
+            </div>
+            <!-- Search by image -->
+            <div
+              class="group absolute top-1/2 right-3 -translate-y-1/2 cursor-pointer sm:right-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 sm:h-6 sm:w-6"
+                viewBox="0 -960 960 960"
+                fill="#004643"
+              >
+                <path
+                  d="M216-144q-29.7 0-50.85-21.5Q144-187 144-216v-528q0-29 21.15-50.5T216-816h528q29.7 0 50.85 21.5Q816-773 816-744v528q0 29-21.15 50.5T744-144H216Zm0-72h528v-528H216v528Zm48-72h432L552-480 444-336l-72-96-108 144Zm-48 72v-528 528Z"
+                />
+              </svg>
+              <!-- Tooltip -->
+              <div
+                class="bg-dark-blue dark:bg-light-blue pointer-events-none absolute top-full left-1/2 z-10 mt-2 w-max -translate-x-1/2 rounded px-2 py-1 text-xs text-white opacity-0 shadow-lg transition-opacity group-hover:opacity-100 sm:px-3 sm:py-1.5"
+              >
+                Search by image
+                <div
+                  class="border-b-dark-blue dark:border-b-light-blue absolute top-0 left-1/2 h-0 w-0 -translate-x-1/2 -translate-y-full border-x-4 border-b-4 border-x-transparent sm:border-x-5 sm:border-b-5"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Buttons section -->
+      <section class="w-full">
+        <div class="flex justify-center gap-x-3 pb-6 md:gap-x-6 md:pb-9">
+          <button
+            class="border-dark-blue hover:bg-yellow dark:bg-dark-blue transform cursor-pointer rounded border-2 bg-white p-2 text-[12px] shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 hover:translate-0.5 hover:text-white hover:shadow-none md:px-8 md:py-3 md:text-[14px] dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
+          >
+            Google Search
+          </button>
+          <button
+            class="border-dark-blue hover:bg-yellow dark:bg-dark-blue transform cursor-pointer rounded border-2 bg-white p-2 text-[12px] shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 hover:translate-0.5 hover:text-white hover:shadow-none md:px-8 md:py-3 md:text-[14px] dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
+          >
+            I'm Feeling Lucky
+          </button>
+        </div>
+      </section>
+      <!-- Language section -->
+      <section class="w-full">
+        <div
+          class="flex flex-col items-center justify-center md:flex-row md:gap-x-3"
+        >
+          <p class="text-center text-[14px] font-light md:text-right">
+            Google offered in:
+          </p>
+          <ul
+            class="flex flex-row justify-center text-[12px] font-normal md:text-[14px]"
+          >
+            <li class="pr-4">
+              <a
+                href="#"
+                class="text-dark-blue decoration-wavy underline-offset-2 hover:underline dark:text-white"
+                >हिन्दी</a
+              >
+            </li>
+            <li class="pr-4">
+              <a
+                href="#"
+                class="text-dark-blue decoration-wavy underline-offset-2 hover:underline dark:text-white"
+                >বাংলা</a
+              >
+            </li>
+            <li class="pr-4">
+              <a
+                href="#"
+                class="text-dark-blue decoration-wavy underline-offset-2 hover:underline dark:text-white"
+                >తెలుగు</a
+              >
+            </li>
+            <li class="pr-4">
+              <a
+                href="#"
+                class="text-dark-blue decoration-wavy underline-offset-2 hover:underline dark:text-white"
+                >मराठी</a
+              >
+            </li>
+            <li class="pr-4">
+              <a
+                href="#"
+                class="text-dark-blue decoration-wavy underline-offset-2 hover:underline dark:text-white"
+                >தமிழ்</a
+              >
+            </li>
+            <li class="pr-4">
+              <a
+                href="#"
+                class="text-dark-blue decoration-wavy underline-offset-2 hover:underline dark:text-white"
+                >ગુજરાતી</a
+              >
+            </li>
+            <li class="pr-4">
+              <a
+                href="#"
+                class="text-dark-blue decoration-wavy underline-offset-2 hover:underline dark:text-white"
+                >ಕನ್ನಡ</a
+              >
+            </li>
+            <li class="pr-4">
+              <a
+                href="#"
+                class="text-dark-blue decoration-wavy underline-offset-2 hover:underline dark:text-white"
+                >മലയാളം</a
+              >
+            </li>
+            <li class="pr-4">
+              <a
+                href="#"
+                class="text-dark-blue decoration-wavy underline-offset-2 hover:underline dark:text-white"
+                >ਪੰਜਾਬੀ</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="dark:bg-footer-dark mt-auto w-full bg-white">
+      <!-- Top section -->
+      <section class="border-b-dark-blue border-b-2 p-2 md:p-5">
+        <p class="px-2">India</p>
+      </section>
+      <!-- Bottom section -->
+      <section
+        class="flex flex-col items-center justify-between p-2 md:flex-row md:p-5"
+      >
+        <section class="mb-2 flex items-center justify-between md:mb-0">
+          <a
+            href="#"
+            class="px-2 text-[14px] decoration-wavy underline-offset-2 hover:underline"
+            >Advertising</a
+          >
+          <a
+            href="#"
+            class="px-2 text-[14px] decoration-wavy underline-offset-2 hover:underline"
+            >Business</a
+          >
+          <a
+            href="#"
+            class="px-2 text-[14px] decoration-wavy underline-offset-2 hover:underline"
+            >How Search works</a
+          >
+        </section>
+        <section class="flex items-center justify-between">
+          <a
+            href="#"
+            class="px-2 text-[14px] decoration-wavy underline-offset-2 hover:underline"
+            >Privacy</a
+          >
+          <a
+            href="#"
+            class="px-2 text-[14px] decoration-wavy underline-offset-2 hover:underline"
+            >Terms</a
+          >
+          <a
+            href="#"
+            class="px-2 text-[14px] decoration-wavy underline-offset-2 hover:underline"
+            >Settings</a
+          >
+        </section>
+      </section>
+    </footer>
+    <!-- Search model -->
+    <div
+      id="search-modal"
+      class="before:bg-light-blue fixed z-50 mx-auto hidden h-screen w-screen max-w-full items-center justify-center before:h-screen before:w-screen before:opacity-70"
+    >
+      <div
+        class="border-dark-blue dark:bg-dark-blue absolute top-1/2 left-1/2 z-100 mx-auto w-100 -translate-x-1/2 -translate-y-1/2 transform rounded-2xl border-2 bg-white shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] md:w-2xl lg:w-1/2 dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
+      >
+        <input
+          type="text"
+          name="search"
+          id="search"
+          autocomplete="off"
+          class="text-dark-blue border-dark-blue h-12 min-h-11 w-full rounded-t-2xl border-b-2 pl-12 text-sm focus:outline-0 active:outline-0 md:text-base dark:border-white dark:text-white"
+        />
+        <!-- Search Icon -->
+        <div class="absolute top-3 left-4">
+          <svg
+            class="fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            height="25px"
+            viewBox="0 -960 960 960"
+            width="25px"
+            fill="#004643"
+          >
+            <path
+              d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"
+            />
+          </svg>
+        </div>
+        <!-- Close icon  -->
+        <div
+          id="close-btn"
+          class="absolute top-3 right-4 cursor-pointer rounded-3xl hover:border-2 dark:text-white"
+        >
+          <svg
+            class="fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#004643"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </div>
+        <!-- Suggestion list -->
+        <div class="px-3 py-2 md:py-5">
+          <ul>
+            <li>
+              <p class="text-light-blue px-2 text-sm md:text-base">
+                Trending searches
+              </p>
+            </li>
+            <li
+              class="hover:border-dark-blue border-2 border-transparent text-lg hover:rounded-full dark:text-white dark:hover:border-white"
+            >
+              <div class="flex cursor-pointer items-center px-2 py-1.5">
+                <!-- Trending icon -->
+                <svg
+                  class="h-4 w-4 fill-current md:h-5 md:w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 -960 960 960"
+                  fill="#004643"
+                >
+                  <path
+                    d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
+                  />
+                </svg>
+                <p class="pl-3 text-sm md:text-base">
+                  Latest AI technologies in 2025
+                </p>
+              </div>
+            </li>
+            <li
+              class="hover:border-dark-blue border-2 border-transparent text-lg hover:rounded-full dark:text-white dark:hover:border-white"
+            >
+              <div class="flex cursor-pointer items-center px-2 py-1.5">
+                <svg
+                  class="h-4 w-4 fill-current md:h-5 md:w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 -960 960 960"
+                  fill="#004643"
+                >
+                  <path
+                    d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
+                  />
+                </svg>
+                <p class="pl-3 text-sm md:text-base">
+                  How to use Tailwind CSS effectively
+                </p>
+              </div>
+            </li>
+            <li
+              class="hover:border-dark-blue border-2 border-transparent text-lg hover:rounded-full dark:text-white dark:hover:border-white"
+            >
+              <div class="flex cursor-pointer items-center px-2 py-1.5">
+                <svg
+                  class="h-4 w-4 fill-current md:h-5 md:w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 -960 960 960"
+                  fill="#004643"
+                >
+                  <path
+                    d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
+                  />
+                </svg>
+                <p class="pl-3 text-sm md:text-base">
+                  Web development roadmap 2025
+                </p>
+              </div>
+            </li>
+            <li
+              class="hover:border-dark-blue border-2 border-transparent text-lg hover:rounded-full dark:text-white dark:hover:border-white"
+            >
+              <div class="flex cursor-pointer items-center px-2 py-1.5">
+                <svg
+                  class="h-4 w-4 fill-current md:h-5 md:w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 -960 960 960"
+                  fill="#004643"
+                >
+                  <path
+                    d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"
+                  />
+                </svg>
+                <p class="pl-3 text-sm md:text-base">
+                  Google I/O conference updates
+                </p>
+              </div>
+            </li>
+          </ul>
+          <!-- Two buttons -->
+          <div
+            class="flex flex-row items-center justify-center gap-x-4 gap-y-0 pt-3 pb-2 md:gap-x-6 md:gap-y-4 md:pt-8"
+          >
+            <button
+              class="border-dark-blue hover:bg-yellow dark:bg-dark-blue w-full transform cursor-pointer rounded border-2 bg-white px-4 py-2 text-xs shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 hover:translate-0.5 hover:text-white hover:shadow-none sm:w-auto sm:py-3 md:text-sm lg:px-8 dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
+            >
+              Google Search
+            </button>
+            <button
+              class="border-dark-blue hover:bg-yellow dark:bg-dark-blue w-full transform cursor-pointer rounded border-2 bg-white px-4 py-2 text-xs shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 hover:translate-0.5 hover:text-white hover:shadow-none sm:w-auto sm:py-3 md:text-sm lg:px-8 dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
+            >
+              I'm Feeling Lucky
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
