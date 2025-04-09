@@ -52,7 +52,7 @@ Just basic understanding of HTML and CSS
     🔹 Add to `input.css`:
 
     ```css
-        @plugin "@tailwindcss/forms";
+    @plugin "@tailwindcss/forms";
     ```
 
     🔹 Usage:
@@ -66,7 +66,7 @@ Just basic understanding of HTML and CSS
    🔹 Add to `input.css`:
 
     ```css
-        @plugin "@tailwindcss/typography";
+    @plugin "@tailwindcss/typography";
     ```
 
    🔹 Usage:
@@ -83,7 +83,7 @@ Just basic understanding of HTML and CSS
     🔹 Add to `input.css`:
 
     ```css
-        @plugin "@tailwindcss/aspect-ratio";
+    @plugin "@tailwindcss/aspect-ratio";
     ```
 
     🔹 Usage:
@@ -100,7 +100,7 @@ Just basic understanding of HTML and CSS
     🔹 Add to ``input.css``:
 
     ```css
-        @plugin "daisyui";
+    @plugin "daisyui";
     ```
 
     🔹 Usage:
@@ -115,7 +115,7 @@ Just basic understanding of HTML and CSS
     🔹 Add to `input.css`:
 
     ```css
-        @plugin "tailwindcss-debug-screens";
+    @plugin "tailwindcss-debug-screens";
     ```
 
     🔹 Usage:
@@ -126,3 +126,23 @@ Just basic understanding of HTML and CSS
     ```
 
     ✔️ Now it shows active screen size while resizing!
+
+6) `npm install -D prettier prettier-plugin-tailwindcss` (https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)  
+✔️ Automatic Class Sorting with Prettier
+    🔹 Create file `.prettierrc`:
+
+    ```javascript
+    {
+        "plugins": ["prettier-plugin-tailwindcss"]
+    }
+    ```
+
+    🔹 Usage:
+    ```html
+    <!-- Before -->
+    <button class="text-white px-4 sm:px-8 py-2 sm:py-3 bg-sky-700 hover:bg-sky-800">...</button>
+    <!-- After -->
+    <button class="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3">...</button>
+    ```
+
+    ✔️ This plugin scans your templates for class attributes containing Tailwind CSS classes, and then sorts those classes automatically following our [recommended class order](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier#how-classes-are-sorted).
