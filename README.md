@@ -9,6 +9,7 @@ Tailwind CSS 4 Learning
 5) No need to override css
 6) Fast development
 7) Fast performance
+8) By Default Tailwind uses the mobile first breakpoint system which means you first create your mobile design and then you can target the larger display using the breakpoints.
 
 ## Better than other CSS Framework?
 1) Its completely depend on the requirements
