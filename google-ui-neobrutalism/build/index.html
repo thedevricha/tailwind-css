@@ -11,8 +11,10 @@
   <body
     class="font-public-sans bg-light-blue text-dark-blue font-roboto dark:bg-dark-blue flex min-h-full flex-col dark:text-white"
   >
-    <header class="flex items-center justify-between px-5 py-5">
-      <section class="flex items-center justify-between">
+    <header
+      class="flex flex-col flex-wrap items-center justify-between px-5 py-5 md:flex-row"
+    >
+      <section class="flex w-full items-center md:w-auto">
         <a
           href="#"
           class="px-2 text-[14px] decoration-wavy underline-offset-2 hover:underline"
@@ -24,137 +26,142 @@
           >Store</a
         >
       </section>
-      <section class="flex items-center justify-between">
-        <a
-          href="#"
-          class="px-2 text-[14px] decoration-wavy underline-offset-2 hover:underline"
-          >Gmail</a
-        >
-        <a
-          href="#"
-          class="px-2 text-[14px] decoration-wavy underline-offset-2 hover:underline"
-          >Images</a
-        >
-        <!-- Search labs -->
-        <div
-          class="border-dark-blue hover:bg-yellow group dark:bg-dark-blue mx-2 transform cursor-pointer rounded border-2 bg-white p-0 shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 hover:translate-0.5 hover:text-white hover:shadow-none md:p-1 dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
-        >
-          <svg
-            class="h-6 w-6 fill-current md:w-auto"
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#444746"
+      <section
+        class="flex w-full flex-row items-center justify-between md:w-auto"
+      >
+        <div class="flex items-center justify-between">
+          <a
+            href="#"
+            class="px-2 text-[14px] decoration-wavy underline-offset-2 hover:underline"
+            >Gmail</a
           >
-            <path
-              d="M200-120q-51 0-72.5-45.5T138-250l222-270v-240h-40q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760h-40v240l222 270q32 39 10.5 84.5T760-120H200Zm80-120h400L544-400H416L280-240Zm-80 40h560L520-492v-268h-80v268L200-200Zm280-280Z"
-            />
-          </svg>
-          <!-- Tooltip -->
-          <div
-            class="border-dark-blue bg-dark-blue dark:bg-light-blue dark:border-light-blue absolute top-full left-1/2 z-10 mt-1 w-max -translate-x-1/2 rounded border-2 p-1 text-xs text-white opacity-0 group-hover:opacity-100 md:px-3 md:py-1.5"
+          <a
+            href="#"
+            class="px-2 text-[14px] decoration-wavy underline-offset-2 hover:underline"
+            >Images</a
           >
-            Search Labs
-            <div
-              class="border-b-dark-blue dark:border-b-light-blue absolute top-0 left-1/2 h-0 w-0 -translate-x-1/2 -translate-y-full border-x-5 border-b-5 border-x-transparent"
-            ></div>
-          </div>
         </div>
-        <!-- Google apps -->
-        <div
-          class="border-dark-blue hover:bg-yellow group dark:bg-dark-blue mx-2 transform cursor-pointer rounded border-2 bg-white p-0 shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 hover:translate-0.5 hover:text-white hover:shadow-none md:p-1 dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
-        >
-          <svg
-            class="fill-current"
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#444746"
-          >
-            <path
-              d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"
-            />
-          </svg>
-          <!-- Tooltip -->
+        <div class="flex items-center justify-between">
+          <!-- Search labs -->
           <div
-            class="border-dark-blue bg-dark-blue dark:bg-light-blue dark:border-light-blue absolute top-full left-1/2 z-10 mt-1 w-max -translate-x-1/2 rounded border-2 px-3 py-1.5 text-xs text-white opacity-0 group-hover:opacity-100"
+            class="border-dark-blue hover:bg-yellow group dark:bg-dark-blue mx-2 transform cursor-pointer rounded border-2 bg-white p-0 shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 hover:translate-0.5 hover:text-white hover:shadow-none md:p-1 dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
           >
-            Google apps
-            <div
-              class="border-b-dark-blue dark:border-b-light-blue absolute top-0 left-1/2 h-0 w-0 -translate-x-1/2 -translate-y-full border-x-5 border-b-5 border-x-transparent"
-            ></div>
-          </div>
-        </div>
-        <!-- User Account -->
-        <button
-          class="border-dark-blue hover:bg-yellow group dark:bg-dark-blue mx-2 transform cursor-pointer rounded-full border-2 bg-white p-0 shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 hover:translate-0.5 hover:text-white hover:shadow-none md:p-1 dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
-        >
-          <svg
-            class="fill-current"
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#444746"
-          >
-            <path
-              d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"
-            />
-          </svg>
-          <!-- Tooltip -->
-          <div
-            class="-translate-x-1/right-0 border-dark-blue bg-dark-blue dark:bg-light-blue dark:border-light-blue absolute top-full right-0 mt-2 w-max rounded border-2 px-3 py-1.5 text-left text-xs text-white opacity-0 group-hover:opacity-100"
-          >
-            <span class="text-xs md:text-sm">Google Account </span><br /><span
-              class="text-yellow dark:text-dark-blue"
-              >Richa</span
-            ><br /><span class="text-yellow dark:text-dark-blue"
-              >thedevricha@gmail.com</span
+            <svg
+              class="h-6 w-6 fill-current md:w-auto"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#444746"
             >
-            <!-- <div
-							class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-gray-800"
-						></div> -->
+              <path
+                d="M200-120q-51 0-72.5-45.5T138-250l222-270v-240h-40q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760h-40v240l222 270q32 39 10.5 84.5T760-120H200Zm80-120h400L544-400H416L280-240Zm-80 40h560L520-492v-268h-80v268L200-200Zm280-280Z"
+              />
+            </svg>
+            <!-- Tooltip -->
+            <div
+              class="border-dark-blue bg-dark-blue dark:bg-light-blue dark:border-light-blue absolute top-full left-1/2 z-10 mt-1 w-max -translate-x-1/2 rounded border-2 p-1 text-xs text-white opacity-0 group-hover:opacity-100 md:px-3 md:py-1.5"
+            >
+              Search Labs
+              <div
+                class="border-b-dark-blue dark:border-b-light-blue absolute top-0 left-1/2 h-0 w-0 -translate-x-1/2 -translate-y-full border-x-5 border-b-5 border-x-transparent"
+              ></div>
+            </div>
           </div>
-        </button>
-
-        <!-- Light/ dark mode -->
-        <div
-          onclick="changeMode()"
-          class="border-dark-blue hover:bg-yellow group dark:bg-dark-blue mx-2 transform cursor-pointer rounded border-2 bg-white p-0 shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 hover:translate-0.5 hover:text-white hover:shadow-none md:p-1 dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
-        >
-          <svg
-            class="hidden fill-current dark:inline"
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#004643"
+          <!-- Google apps -->
+          <div
+            class="border-dark-blue hover:bg-yellow group dark:bg-dark-blue mx-2 transform cursor-pointer rounded border-2 bg-white p-0 shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 hover:translate-0.5 hover:text-white hover:shadow-none md:p-1 dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
           >
-            <path
-              d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
-            />
-          </svg>
-          <svg
-            class="fill-current dark:hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#004643"
+            <svg
+              class="fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#444746"
+            >
+              <path
+                d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"
+              />
+            </svg>
+            <!-- Tooltip -->
+            <div
+              class="border-dark-blue bg-dark-blue dark:bg-light-blue dark:border-light-blue absolute top-full left-1/2 z-10 mt-1 w-max -translate-x-1/2 rounded border-2 px-3 py-1.5 text-xs text-white opacity-0 group-hover:opacity-100"
+            >
+              Google apps
+              <div
+                class="border-b-dark-blue dark:border-b-light-blue absolute top-0 left-1/2 h-0 w-0 -translate-x-1/2 -translate-y-full border-x-5 border-b-5 border-x-transparent"
+              ></div>
+            </div>
+          </div>
+          <!-- User Account -->
+          <button
+            class="border-dark-blue hover:bg-yellow group dark:bg-dark-blue mx-2 transform cursor-pointer rounded-full border-2 bg-white p-0 shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 hover:translate-0.5 hover:text-white hover:shadow-none md:p-1 dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
           >
-            <path
-              d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
-            />
-          </svg>
+            <svg
+              class="fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#444746"
+            >
+              <path
+                d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"
+              />
+            </svg>
+            <!-- Tooltip -->
+            <div
+              class="-translate-x-1/right-0 border-dark-blue bg-dark-blue dark:bg-light-blue dark:border-light-blue absolute top-full right-0 mt-2 w-max rounded border-2 px-3 py-1.5 text-left text-xs text-white opacity-0 group-hover:opacity-100"
+            >
+              <span class="text-xs md:text-sm">Google Account </span><br /><span
+                class="text-yellow dark:text-dark-blue"
+                >Richa</span
+              ><br /><span class="text-yellow dark:text-dark-blue"
+                >thedevricha@gmail.com</span
+              >
+              <!-- <div
+            class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-full w-0 h-0 border-x-5 border-x-transparent border-b-5 border-b-gray-800"
+          ></div> -->
+            </div>
+          </button>
+          <!-- Light/ dark mode -->
+          <div
+            onclick="changeMode()"
+            class="border-dark-blue hover:bg-yellow group dark:bg-dark-blue mx-2 transform cursor-pointer rounded border-2 bg-white p-0 shadow-[2px_2px_0px_1px_rgba(0,_70,_67,_1.0)] duration-700 hover:translate-0.5 hover:text-white hover:shadow-none md:p-1 dark:border-white dark:shadow-[2px_2px_0px_1px_rgba(255,_255,_255,_1.0)]"
+          >
+            <svg
+              class="hidden fill-current dark:inline"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#004643"
+            >
+              <path
+                d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
+              />
+            </svg>
+            <svg
+              class="fill-current dark:hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#004643"
+            >
+              <path
+                d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
+              />
+            </svg>
+          </div>
         </div>
       </section>
     </header>
     <main class="w-full pt-10">
       <!-- Google Logo Section -->
       <section
-        class="mx-auto flex w-full items-center justify-center gap-0 lg:gap-1"
+        class="mx-auto flex w-full scale-85 items-center justify-center gap-0 md:scale-90 lg:scale-100 lg:gap-1"
       >
         <!-- Google Text (G) -->
         <h1
@@ -246,7 +253,7 @@
       <!-- Search section -->
       <section class="w-full pt-2">
         <div class="flex justify-center pt-3 pb-6 sm:pt-4 md:pt-5 md:pb-10">
-          <div class="relative w-full max-w-md md:max-w-xl lg:max-w-2xl">
+          <div class="relative w-80 md:w-full md:max-w-xl lg:max-w-2xl">
             <!-- Search input -->
             <input
               type="text"
@@ -255,7 +262,7 @@
               readonly
             />
             <!-- Search Icon -->
-            <div class="absolute top-6 left-3 -translate-y-1/2 md:left-4">
+            <div class="absolute top-6 left-3 -translate-y-3 md:left-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="20px"
@@ -271,7 +278,7 @@
             </div>
             <!-- Search by voice  -->
             <div
-              class="group absolute top-6 right-10 -translate-y-1/2 cursor-pointer sm:right-12"
+              class="group absolute top-6 right-10 -translate-y-3 cursor-pointer sm:right-12"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -295,7 +302,7 @@
             </div>
             <!-- Search by image -->
             <div
-              class="group absolute top-6 right-3 -translate-y-1/2 cursor-pointer sm:right-4"
+              class="group absolute top-6 right-3 -translate-y-3 cursor-pointer sm:right-4"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -344,7 +351,7 @@
             Google offered in:
           </p>
           <ul
-            class="flex flex-row justify-center text-[12px] font-normal md:text-[14px]"
+            class="flex flex-row flex-wrap justify-center text-[12px] font-normal md:text-[14px]"
           >
             <li class="pr-4">
               <a
